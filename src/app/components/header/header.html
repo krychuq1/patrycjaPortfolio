@@ -1,6 +1,22 @@
 <div class="header">
-  <img src="../../../assets/header/logo.png">
-  <div class="languages">
-    <p (click)="setLanguage('en')" class="en">en</p> <span class="line">|</span> <p (click)="setLanguage('pl')" class="pl">pl</p>
+  <div class="logo">
+    <img src="../../../assets/header/logo.png">
   </div>
+  <div class="language-burger">
+    <div class="languages">
+      <p (click)="setLanguage('en')" class="en">en</p> <span class="line">|</span> <p (click)="setLanguage('pl')" class="pl">pl</p>
+    </div>
+    <button class="hamburger hamburger--collapse"
+            (click)="openBurger()" [ngClass]="navBurger ? 'is-active' : ''"
+            type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    </button>
+  </div>
+</div>
+<div class="header-text" *ngIf="content">
+  <p>{{content['title']}}</p>
+  <p>{{content['subTitle']}}</p>
+
 </div>

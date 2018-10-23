@@ -10,8 +10,12 @@ import {ContentService} from '../../services/content.service';
 export class HeaderComponent {
   contentUrl: string;
   content: object;
+  navBurger: boolean;
   constructor(private languageService: LanguageService, private contentService: ContentService) {
     this.contentUrl = 'component/header/';
+    this.navBurger = false;
+    this.getContent();
+
   }
   public setLanguage(lan: string) {
     console.log(this.languageService);
@@ -19,10 +23,14 @@ export class HeaderComponent {
     this.getContent();
   }
   getContent() {
-    this.contentService.getContent(this.contentUrl).then((content) =>{
+    this.contentService.getContent(this.contentUrl).then((content) => {
       this.content = content;
+      console.log(this.content, '<--- content');
     }, err => {
       console.error(err);
     });
+  }
+  public openBurger() {
+    this.navBurger = !this.navBurger;
   }
 }
