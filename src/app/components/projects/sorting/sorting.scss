@@ -1,0 +1,10 @@
+.sorting{
+  text-align: center;
+  span{
+    padding-right: 10px;
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+
+}

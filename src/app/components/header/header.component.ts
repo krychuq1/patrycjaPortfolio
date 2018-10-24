@@ -18,14 +18,12 @@ export class HeaderComponent {
 
   }
   public setLanguage(lan: string) {
-    console.log(this.languageService);
     this.languageService.setLanguage(lan);
     this.getContent();
   }
   getContent() {
     this.contentService.getContent(this.contentUrl).then((content) => {
       this.content = content;
-      console.log(this.content, '<--- content');
     }, err => {
       console.error(err);
     });
