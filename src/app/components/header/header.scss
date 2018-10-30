@@ -3,18 +3,54 @@
 .header{
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
+  //border: 1px solid black;
+  .logo{
+    //border: 1px red dashed;
+    display: flex;
+    align-items: center;
+    img{
+      max-height: 50px;
+      //border: 1px blue dashed;
+
+    }
+  }
+  .hamburger{
+    padding: 0 !important;
+  }
+  .hamburger-box{
+    //border: 1px solid red;
+    .hamburger-inner{
+      width: 35px;
+      height: 0.1rem;
+      &:before{
+        @extend .hamburger-inner;
+      }
+      &:after{
+        @extend .hamburger-inner;
+      }
+
+    }
+    &:before{
+      height: 1px;
+    }
+  }
   .language-burger{
     display: flex;
     .languages{
       display: flex;
-      border: 1px solid red;
+      //border: 1px solid red;
       align-items: center;
-      width: 50px;
+      width: 43px;
       justify-content: space-between;
+      margin-right: 20px;
+      font-size: 0.9rem;
+
     }
   }
 }
 .header-text{
   text-align: left;
+  p{
+    font-size: 0.8rem;
+  }
 }

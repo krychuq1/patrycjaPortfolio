@@ -1,10 +1,16 @@
-<div class="sorting">
-  <span>{{content['sort']}}</span>
-  <span>{{content['concept']}}</span>
-  <span>{{content['game']}}</span>
-  <span>{{content['webDesign']}}</span>
-  <span>{{content['logo']}}</span>
-  <span>{{content['spanrint']}}</span>
-  <span>{{content['identity']}}</span>
+<div class="sorting" *ngIf="content">
+  <div class="sort">
+    <span>{{content['sort']}}</span>
+  </div>
+  <div class="menu">
+
+    <span (click)="sendFilter('concept')">{{content['concept']}}</span>
+    <span (click)="sendFilter('games')">{{content['game']}}</span>
+    <span (click)="sendFilter('webDesign')">{{content['webDesign']}}</span>
+    <span (click)="sendFilter('logo')">{{content['logo']}}</span>
+    <span (click)="sendFilter('print')">{{content['print']}}</span>
+    <span (click)="sendFilter('visual')">{{content['identity']}}</span>
+
+  </div>
 
 </div>

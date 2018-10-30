@@ -4,3 +4,5 @@ body{
   font-weight: 300;
   margin: 25px;
 }
+// remove border blue line from focus element
+*:focus {outline:none}

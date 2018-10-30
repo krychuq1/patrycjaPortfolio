@@ -1,20 +1,36 @@
 <div class="project-holder">
-  <app-sorting></app-sorting>
-  <img src="../../../assets/projects/andl.jpg" alt="andl">
-  <img src="../../../assets/projects/arla.jpg" alt="arla">
-  <img src="../../../assets/projects/book.jpg" alt="book">
-  <img src="../../../assets/projects/booky.jpg" alt="booky">
-  <img src="../../../assets/projects/edc.jpg" alt="edc">
-  <img src="../../../assets/projects/fronts.jpg" alt="fronts">
-  <img src="../../../assets/projects/gajol.jpg" alt="gajol">
-  <img src="../../../assets/projects/imread.jpg" alt="imread">
-  <img src="../../../assets/projects/moha.jpg" alt="moha">
-  <img src="../../../assets/projects/otis.jpg" alt="otis">
-  <img src="../../../assets/projects/pop.jpg" alt="pop">
-  <img src="../../../assets/projects/posterChallenge.jpg" alt=posterChallenge>
-  <img src="../../../assets/projects/spotify.jpg" alt="spotify">
-  <img src="../../../assets/projects/stp.jpg" alt="stp">
-  <img src="../../../assets/projects/tattoo.jpg" alt="tattoo">
-  <img src="../../../assets/projects/valentines.jpg" alt="valentines">
+  <app-sorting (filterEvent)="receiveMessage($event)"></app-sorting>
+  <!--concet-->
+  <img src="../../../assets/projects/andl.jpg" alt="andl" *ngIf="filter === 'concept' || filter === 'any'">
+  <!--concept-->
+  <img src="../../../assets/projects/arla.jpg" alt="arla" *ngIf="filter === 'concept' || filter === 'any'">
+  <!--print-->
+  <img src="../../../assets/projects/book.jpg" alt="book" *ngIf="filter === 'print' || filter === 'any'">
+  <!--web design-->
+  <img src="../../../assets/projects/booky.jpg" alt="booky" *ngIf="filter === 'web' || filter === 'any'">
+  <!--concept-->
+  <img src="../../../assets/projects/edc.jpg" alt="edc" *ngIf="filter === 'concept' || filter === 'any'">
+  <!--logo-->
+  <img src="../../../assets/projects/fronts.jpg" alt="fronts" *ngIf="filter === 'logo' || filter === 'any'">
+  <!--conpetc-->
+  <img src="../../../assets/projects/gajol.jpg" alt="gajol" *ngIf="filter === 'concept' || filter === 'any'">
+  <!--ux-->
+  <img src="../../../assets/projects/imread.jpg" alt="imread" *ngIf="filter === 'ux' || filter === 'any'">
+  <!--visual identity-->
+  <img src="../../../assets/projects/moha.jpg" alt="moha" *ngIf="filter === 'visual' || filter === 'any'">
+  <!--print-->
+  <img src="../../../assets/projects/otis.jpg" alt="otis" *ngIf="filter === 'print' || filter === 'any'">
+  <!--web desing-->
+  <img src="../../../assets/projects/pop.jpg" alt="pop" *ngIf="filter === 'web' || filter === 'any'">
+  <!--print-->
+  <img src="../../../assets/projects/posterChallenge.jpg" alt=posterChallenge *ngIf="filter === 'print' || filter === 'any'">
+  <!--conpect-->
+  <img src="../../../assets/projects/spotify.jpg" alt="spotify" *ngIf="filter === 'concept' || filter === 'any'">
+  <!--games-->
+  <img src="../../../assets/projects/stp.jpg" alt="stp" *ngIf="filter === 'concept' || filter === 'any'">
+  <!--visal identity-->
+  <img src="../../../assets/projects/tattoo.jpg" alt="tattoo" *ngIf="filter === 'visual' || filter === 'any'">
+  <!--games-->
+  <img src="../../../assets/projects/valentines.jpg" alt="valentines" *ngIf="filter === 'games' || filter === 'any'">
 
 </div>

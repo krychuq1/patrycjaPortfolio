@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {LanguageService} from '../../../services/language.service';
 import {ContentService} from '../../../services/content.service';
 @Component({
@@ -14,11 +14,16 @@ export class SortingComponent {
     this.contentUrl = 'component/sorting/';
     this.getContent();
   }
+  @Output() filterEvent = new EventEmitter<string>();
+
   getContent() {
     this.contentService.getContent(this.contentUrl).then((content) => {
       this.content = content;
     }, err => {
       console.error(err);
     });
+  }
+  sendFilter(filter: string) {
+    this.filterEvent.emit(filter);
   }
 }

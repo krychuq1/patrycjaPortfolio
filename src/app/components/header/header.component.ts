@@ -29,6 +29,7 @@ export class HeaderComponent {
     });
   }
   public openBurger() {
+    console.log('burger open');
     this.navBurger = !this.navBurger;
   }
 }

@@ -6,7 +6,7 @@
     <div class="languages">
       <p (click)="setLanguage('en')" class="en">en</p> <span class="line">|</span> <p (click)="setLanguage('pl')" class="pl">pl</p>
     </div>
-    <button class="hamburger hamburger--collapse"
+    <button class="hamburger hamburger--collapse dupa"
             (click)="openBurger()" [ngClass]="navBurger ? 'is-active' : ''"
             type="button">
     <span class="hamburger-box">
@@ -19,4 +19,17 @@
   <p>{{content['title']}}</p>
   <p>{{content['subTitle']}}</p>
 
+</div>
+<div class="open-nav">
+  <div class="nav-text">
+    <p>strona główna</p>
+    <p>o mnie </p>
+    <p>kontakt</p>
+    <div class="images">
+      <img src="assets/header/fb.png" alt="facebook">
+      <img src="assets/header/insta.png" alt="instagram">
+      <img src="assets/header/linkedin.png" alt="linkedin">
+
+    </div>
+  </div>
 </div>

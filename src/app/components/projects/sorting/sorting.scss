@@ -1,7 +1,24 @@
 .sorting{
-  text-align: center;
+  //text-align: center;
+  display: flex;
+  .sort{
+    //border: 1px solid red;
+    width: 80px;
+  }
+  .menu{
+    //border: 1px solid blue;
+    text-align: left;
+    //display: flex;
+    width: 100%;
+  }
   span{
-    padding-right: 10px;
+    //padding-right: 10px;
+    font-size: 0.8rem;
+    //border: 1px solid blue;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    //display: block;
     &:last-child{
       padding-right: 0;
     }
