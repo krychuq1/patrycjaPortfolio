@@ -1,5 +1,26 @@
 @import "../../../../node_modules/hamburgers/dist/hamburgers.css";
 
+.hamburger{
+  padding: 0 !important;
+}
+.hamburger-box{
+  //border: 1px solid red;
+  .hamburger-inner{
+    width: 35px;
+    height: 0.1rem;
+    &:before{
+      @extend .hamburger-inner;
+    }
+    &:after{
+      @extend .hamburger-inner;
+    }
+
+  }
+  &:before{
+    height: 1px;
+  }
+}
+
 .header{
   display: flex;
   justify-content: space-between;
@@ -12,26 +33,6 @@
       max-height: 50px;
       //border: 1px blue dashed;
 
-    }
-  }
-  .hamburger{
-    padding: 0 !important;
-  }
-  .hamburger-box{
-    //border: 1px solid red;
-    .hamburger-inner{
-      width: 35px;
-      height: 0.1rem;
-      &:before{
-        @extend .hamburger-inner;
-      }
-      &:after{
-        @extend .hamburger-inner;
-      }
-
-    }
-    &:before{
-      height: 1px;
     }
   }
   .language-burger{
@@ -52,5 +53,45 @@
   text-align: left;
   p{
     font-size: 0.8rem;
+  }
+}
+
+.open-nav{
+  //border: 1px solid red;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  padding: 25px;
+  width: calc(100% - 50px);
+  //width: 100vw;
+  left: 0;
+  background: white;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  &--holder{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    //padding-bottom: 150px;
+    .images{
+      margin-top: 70px;
+      img{
+        height: 30px;
+        margin-right: 10px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      //height: 30px;
+    }
+  }
+  .nav-text{
+    text-align: right;
+  }
+  &.show{
+    display: flex;
+
+
   }
 }
