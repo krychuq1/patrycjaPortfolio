@@ -11,6 +11,7 @@ import {SortingComponent} from './components/projects/sorting/sorting.component'
 import {AboutComponent} from './pages/about/about.component';
 import {routes} from './app.routers';
 import {RouterModule} from '@angular/router';
+import {ContactComponent} from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {RouterModule} from '@angular/router';
     HeaderComponent,
     ProjectsComponent,
     SortingComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

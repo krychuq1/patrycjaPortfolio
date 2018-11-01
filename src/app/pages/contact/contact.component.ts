@@ -1,21 +1,17 @@
-import { Component } from '@angular/core';
 import {LanguageService} from '../../services/language.service';
 import {ContentService} from '../../services/content.service';
 
+import {Component} from '@angular/core';
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.html',
-  styleUrls: ['./header.scss']
+  templateUrl: './contact.html',
+  styleUrls: ['./contact.scss']
 })
-export class HeaderComponent {
+export class ContactComponent {
   contentUrl: string;
   content: object;
-  navBurger: boolean;
   constructor(private languageService: LanguageService, private contentService: ContentService) {
-    this.contentUrl = 'component/header/';
-    this.navBurger = false;
+    this.contentUrl = 'page/about/';
     this.getContent();
-
   }
   public setLanguage(lan: string) {
     this.languageService.setLanguage(lan);
@@ -27,9 +23,5 @@ export class HeaderComponent {
     }, err => {
       console.error(err);
     });
-  }
-  public openBurger() {
-    console.log('burger open');
-    this.navBurger = !this.navBurger;
   }
 }

@@ -1,0 +1,16 @@
+.about{
+  img{
+    max-width: calc(100% + 50px);
+    margin-left: -25px;
+    position: relative;
+    z-index: 1;
+  }
+  .about-text{
+    text-align: left;
+    margin-top: -35px;
+    background: white;
+    position: relative;
+    z-index: 2;
+    padding: 40px 20px;
+  }
+}

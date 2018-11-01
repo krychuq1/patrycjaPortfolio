@@ -1,5 +1,5 @@
 <div class="header">
-  <div class="logo">
+  <div class="logo" routerLink="/">
     <img src="../../../assets/header/logo.png">
   </div>
   <div class="language-burger">
@@ -30,12 +30,12 @@
   </button>
   <div class="open-nav--holder">
     <div class="nav-text">
-      <p>{{content['mainPage']}}</p>
-      <p routerLink="about">{{content['about']}}</p>
-      <p>{{content['contact']}}</p>
+      <p (click)="openBurger()">{{content['mainPage']}}</p>
+      <p routerLink="about" (click)="openBurger()">{{content['about']}}</p>
+      <p (click)="openBurger()" routerLink="contact" >{{content['contact']}}</p>
     </div>
     <div class="images">
-      <img src="assets/header/fb.png" alt="facebook">
+      <img src="assets/header/fb.png" alt="facebook" (click)="openBurger()">
       <img src="assets/header/insta.png" alt="instagram">
       <img src="assets/header/linkedin.png" alt="linkedin">
     </div>
