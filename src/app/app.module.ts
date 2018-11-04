@@ -12,6 +12,7 @@ import {AboutComponent} from './pages/about/about.component';
 import {routes} from './app.routers';
 import {RouterModule} from '@angular/router';
 import {ContactComponent} from './pages/contact/contact.component';
+import {ProjectSingleComponent} from './pages/project-single/project-single.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {ContactComponent} from './pages/contact/contact.component';
     ProjectsComponent,
     SortingComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectSingleComponent
   ],
   imports: [
     BrowserModule,

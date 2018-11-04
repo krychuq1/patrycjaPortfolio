@@ -6,3 +6,8 @@ body{
 }
 // remove border blue line from focus element
 *:focus {outline:none}
+p{
+  &.bold{
+    font-weight: 500;
+  }
+}
