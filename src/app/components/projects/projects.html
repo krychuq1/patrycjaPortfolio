@@ -27,7 +27,7 @@
   <!--conpetc-->
   <img src="../../../assets/projects/gajol.jpg"
        alt="gajol" *ngIf="filter === 'concept' || filter === 'any'"
-       >
+       [routerLink]="['/project/gajol']"  >
   <!--ux-->
   <img src="../../../assets/projects/imread.jpg"
        alt="imread" *ngIf="filter === 'ux' || filter === 'any'"

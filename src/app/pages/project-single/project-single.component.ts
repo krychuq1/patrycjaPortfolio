@@ -11,6 +11,7 @@ export class ProjectSingleComponent implements OnInit {
   contentUrl: string;
   content: object;
   projectName: string;
+  key: string;
   constructor(private languageService: LanguageService,
               private contentService: ContentService,
               private activatedRoute: ActivatedRoute) {
@@ -19,6 +20,7 @@ export class ProjectSingleComponent implements OnInit {
   }
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
+      this.key = params.name;
 
     });
     }
