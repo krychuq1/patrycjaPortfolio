@@ -15,7 +15,7 @@ export class ProjectSingleComponent implements OnInit {
   constructor(private languageService: LanguageService,
               private contentService: ContentService,
               private activatedRoute: ActivatedRoute) {
-    this.contentUrl = 'page/project-single/';
+    this.contentUrl = 'page/single-project/';
     this.getContent();
   }
   ngOnInit(): void {

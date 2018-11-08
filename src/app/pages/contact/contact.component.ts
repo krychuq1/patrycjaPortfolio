@@ -10,7 +10,7 @@ export class ContactComponent {
   contentUrl: string;
   content: object;
   constructor(private languageService: LanguageService, private contentService: ContentService) {
-    this.contentUrl = 'page/about/';
+    this.contentUrl = 'page/contact/';
     this.getContent();
   }
   public setLanguage(lan: string) {
