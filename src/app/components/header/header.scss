@@ -1,4 +1,5 @@
 @import "../../../../node_modules/hamburgers/dist/hamburgers.css";
+@import "../../../styles";
 
 .hamburger{
   padding: 0 !important;
@@ -20,10 +21,13 @@
     height: 1px;
   }
 }
-
+.sorting{
+  display: none;
+}
 .header{
   display: flex;
   justify-content: space-between;
+
   //border: 1px solid black;
   .logo{
     //border: 1px red dashed;
@@ -54,6 +58,7 @@
   text-align: left;
   p{
     font-size: 0.8rem;
+    line-height: 1.4rem;
   }
 }
 
@@ -62,7 +67,7 @@
   height: 100vh;
   position: absolute;
   top: 0;
-  padding: 25px;
+  padding: 35px 25px 25px 25px;
   width: calc(100% - 50px);
   //width: 100vw;
   left: 0;
@@ -71,12 +76,24 @@
   flex-direction: column;
   align-items: flex-end;
   z-index: 10;
+  opacity: 0;
+  //animation-name: fadeOut;
+  //animation-duration: 0.5s;
+  &.show{
+    display: flex;
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+  }
+  //margin-top: -60px;
   &--holder{
     display: flex;
     flex-direction: column;
     margin: auto 0;
+
     //padding-bottom: 150px;
     .images{
+      cursor: pointer;
       margin-top: 70px;
       img{
         height: 30px;
@@ -91,10 +108,68 @@
   .nav-text{
     text-align: right;
     cursor: pointer;
+    margin-top: -60px;
   }
-  &.show{
-    display: flex;
 
-
+}
+@include breakpoint(desktop) {
+  .sorting{
+    display: block;
   }
+  .header{
+    max-width: 255px;
+    min-width: 255px;
+    margin-top: 100px;
+    app-sorting{
+      display: block;
+    }
+    .language-burger{
+      .languages{
+        display: none;
+      }
+    }
+  }
+  .hamburger-box{
+    display: none;
+  }
+  .open-nav{
+    //border: 1px solid red;
+    height: auto;
+    position: static;
+    top: 0;
+    padding: 0;
+    width: calc(100% - 50px);
+    //width: 100vw;
+    left: 0;
+    background: white;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 10;
+    .nav-text{
+      text-align: left;
+      margin-top: 80px;
+      p{
+        &:hover{
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  20% { opacity: 0.9; }
+  40% { opacity: 0.5; }
+  60% { opacity: 0.3; }
+  80% { opacity: 0.1; }
+  100% { opacity: 0; display: none }
 }

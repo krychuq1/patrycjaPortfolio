@@ -12,6 +12,9 @@ export class AboutComponent {
   constructor(private languageService: LanguageService, private contentService: ContentService) {
     this.contentUrl = 'page/about/';
     this.getContent();
+    this.languageService.changeLanguage.subscribe(() => {
+      this.getContent();
+    });
   }
   public setLanguage(lan: string) {
     this.languageService.setLanguage(lan);

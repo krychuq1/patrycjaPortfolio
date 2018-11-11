@@ -1,0 +1,18 @@
+@import "../styles";
+
+.app{
+  //text-align: center;
+}
+@include breakpoint(desktop) {
+  app-header{
+    max-width: 255px;
+  }
+  .app{
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    //border: 1px solid red;
+    display: flex;
+  }
+  /* Styles */
+}

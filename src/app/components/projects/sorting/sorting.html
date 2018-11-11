@@ -1,9 +1,9 @@
 <div class="sorting" *ngIf="content">
-  <div class="sort">
+  <div class="sort" (click)="changeSorting()">
     <span>{{content['sort']}}</span>
   </div>
-  <div class="menu">
-
+  <div class="menu" [ngClass]="showSorting ? 'show' : ''">
+    <span (click)="sendFilter('any')">{{content['all']}}</span>
     <span (click)="sendFilter('concept')">{{content['concept']}}</span>
     <span (click)="sendFilter('games')">{{content['game']}}</span>
     <span (click)="sendFilter('webDesign')">{{content['webDesign']}}</span>

@@ -1,6 +1,80 @@
-.project-holder{
-  img{
+@import "../../../styles";
+
+.project-holder {
+  img {
     max-width: 100%;
     margin-bottom: 25px;
   }
+  .languages {
+    display: none;
+  }
 }
+
+  @include breakpoint(desktop) {
+    .project-holder{
+      .img-holder{
+        //border: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        //border: 1px solid red;
+        &--inner{
+          //border: 1px solid blue;
+          &-inner{
+            //border: 1px solid deeppink;
+           &.odd{
+             padding-left: 16px;
+             margin-top: -60px;
+
+           }
+            &.second{
+              margin-top: 0;
+            }
+            &.even{
+              padding-right: 16px;
+
+            }
+            &.first{
+              margin-top: 60px;
+            }
+            //border: 1px solid deeppink;
+
+          }
+
+          max-width : 50%;
+          &:nth-child(odd){
+            //padding-right: 10px;
+          }
+          &:nth-child(even){
+            //padding-left: 10px;
+          }
+        }
+
+      }
+
+      .sorting{
+        display: none;
+      }
+      .languages{
+        display: flex;
+        cursor: pointer;
+        //border: 1px solid red;
+        align-items: center;
+        width: 43px;
+        justify-content: space-between;
+        //margin-right: 20px;
+        font-size: 0.9rem;
+        margin-left: calc(100% - 43px);
+        p{
+          &:hover{
+            font-weight: 500;
+          }
+        }
+
+
+      }
+    }
+
+
+  }
+

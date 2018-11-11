@@ -13,6 +13,8 @@ import {routes} from './app.routers';
 import {RouterModule} from '@angular/router';
 import {ContactComponent} from './pages/contact/contact.component';
 import {ProjectSingleComponent} from './pages/project-single/project-single.component';
+import {SafeHtmlPipe} from './pipes/safe-html-pipe';
+import {HeaderService} from './services/header.service';
 
 @NgModule({
   declarations: [
@@ -22,14 +24,15 @@ import {ProjectSingleComponent} from './pages/project-single/project-single.comp
     SortingComponent,
     AboutComponent,
     ContactComponent,
-    ProjectSingleComponent
+    ProjectSingleComponent,
+    SafeHtmlPipe
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [LanguageService, ContentService],
+  providers: [LanguageService, ContentService, HeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

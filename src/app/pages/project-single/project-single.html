@@ -1,25 +1,27 @@
-<div class="project-single">
-  <h1>{{content[key + 'Header']}}</h1>
-  <p>{{content[key + 'Des']}}</p>
-  <p>{{content[key + 'Credits']}}</p>
+<div class="project-single" *ngIf="content" >
+  <div class="languages">
+    <p (click)="setLanguage('en')" class="en">en</p> <span class="line">|</span>
+    <p (click)="setLanguage('pl')" class="pl">pl</p>
+  </div>
 
-  <!--<div class="text" *ngIf="isLoaded">-->
-      <!--<h1>{{content[key+'Title']}}</h1>-->
-      <!--<h3 innerHTML="{{content[key+'Des']}}"></h3>-->
-      <!--{{content[key+'Des']}}-->
-    <!--</div>-->
-  <img src="assets/projects/single/{{key}}.jpg" alt="project">
-    <!--<div id="singleImgHolder" class="singleImgHolder">-->
-      <!--<img [src]="imgSrc" alt="project_images" *ngIf="isLoaded"-->
-           <!--[ngClass]="{'otisBook': key ==='otisBook',-->
-         <!--'mohaLogo': key === 'mohaLogo',-->
-         <!--'esportLogo': key === 'esportLogo',-->
-         <!--'pieceOfPlantLogo': key === 'pieceOfPlantLogo',-->
-         <!--'theBugLogo' : key === 'theBugLogo',-->
-         <!--'rowForWaterLogo': key === 'rowForWaterLogo',-->
-         <!--'theBugWebsite': key === 'theBugWebsite',-->
-         <!--'bookCover': key === 'bookCover',-->
-         <!--'bookyLogo': key === 'bookyLogo',-->
-         <!--'summerPosters': key === 'summerPosters' && !isMobile}">-->
-    <!--</div>-->
+  <h1 *ngIf="content[key + 'Header']">{{content[key + 'Header']}}</h1>
+  <p  *ngIf="content[key + 'Des']" [innerHtml]="content[key + 'Des'] | safeHtml" class="description"></p>
+  <div class="img-holder">
+    <img src="assets/projects/single/{{key}}.jpg" alt="project" >
+    <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
+  </div>
+  <iframe width="100%" height="300"
+          src="https://www.youtube.com/embed/Ql3Skg_HucU"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen *ngIf="key === 'arla'" class="mobile"></iframe>
+
+  <iframe width="100%" height="500"
+          src="https://www.youtube.com/embed/Ql3Skg_HucU"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen *ngIf="key === 'arla'" class="desktop"></iframe>
+
+
+  <p *ngIf="content[key + 'Credits']" class="credits">{{content[key + 'Credits']}}</p>
+
+
 </div>

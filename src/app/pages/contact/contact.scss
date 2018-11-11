@@ -1,7 +1,54 @@
+@import "../../../styles";
+
 .contact{
   padding-top: 70px;
+  .languages{
+    display: none;
+  }
   .contact-info{
     max-width: 400px;
     text-align: left;
+  }
+}
+@include breakpoint(desktop) {
+
+  .contact{
+    padding-top: 145px;
+    //position: relative;
+    .languages{
+      position: absolute;
+      display: flex;
+      cursor: pointer;
+      //border: 1px solid red;
+      align-items: center;
+      width: 43px;
+      justify-content: space-between;
+      //margin-right: 20px;
+      font-size: 0.9rem;
+      right: 0;
+      top: 0;
+      p{
+        &:hover{
+          font-weight: 500;
+        }
+      }
+    }
+    .contact-info{
+      max-width: 100%;
+      text-align: left;
+      p{
+        margin-bottom: 5px;
+
+      }
+      .details{
+        display: flex;
+        p{
+          margin: 0;
+          &:first-child{
+            margin-right: 20px;
+          }
+        }
+      }
+    }
   }
 }

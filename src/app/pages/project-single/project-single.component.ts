@@ -17,6 +17,9 @@ export class ProjectSingleComponent implements OnInit {
               private activatedRoute: ActivatedRoute) {
     this.contentUrl = 'page/single-project/';
     this.getContent();
+    this.languageService.changeLanguage.subscribe(() => {
+      this.getContent();
+    });
   }
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
@@ -34,6 +37,9 @@ export class ProjectSingleComponent implements OnInit {
     }, err => {
       console.error(err);
     });
+  }
+  scrollToTop(): void{
+    window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
   }
 
 

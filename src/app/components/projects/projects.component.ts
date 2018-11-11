@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {LanguageService} from '../../services/language.service';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.html',
@@ -6,11 +7,18 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   filter: string;
-  constructor() {
+  constructor(private languageService: LanguageService) {
     this.filter = 'any';
+    // this.languageService.changeLanguage.subscribe(() => {
+    //   this.getContent();
+    // });
   }
   receiveMessage($event) {
     this.filter = $event;
   }
-
+  public setLanguage(lan: string) {
+    // console.log('setting language')
+    this.languageService.setLanguage(lan);
+    // this.getContent();
+  }
 }

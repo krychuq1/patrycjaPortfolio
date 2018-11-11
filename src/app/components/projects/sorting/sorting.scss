@@ -1,15 +1,37 @@
+@import "../../../../styles";
+
 .sorting{
   //text-align: center;
   display: flex;
+  padding-bottom: 10px;
   .sort{
     //border: 1px solid red;
     width: 80px;
+    user-select: none;
+    :focus {
+      outline: none !important;
+    }
   }
   .menu{
+    opacity: 0;
+    transition-property: opacity, height;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in;
+    height: 30px;
+    //border: 1px solid red;
+    //transition: height 0.25s ease-in;
+
+    overflow: hidden;
     //border: 1px solid blue;
     text-align: left;
     //display: flex;
     width: 100%;
+    &.show{
+      opacity: 1;
+      transition: opacity 0.3s linear, height 0.3s ease-in;
+      height: 80px;
+      //display: block;
+    }
   }
   span{
     //padding-right: 10px;
@@ -18,10 +40,55 @@
     float: left;
     margin-right: 10px;
     cursor: pointer;
+    padding: 3px 0;
+
     //display: block;
     &:last-child{
       padding-right: 0;
     }
   }
+}
+@include breakpoint(desktop) {
+  .sorting{
+    flex-direction: column;
+    padding-top: 15px;
+    .sort{
+      &:hover{
+        font-weight: 500;
+      }
+    }
+      span{
+      display: block;
+      float: none;
+        &:hover{
+          font-weight: 500;
+        }
+    }
+    .menu{
+      &.show{
+        height: 100%;
+      }
+    }
+  }
 
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
