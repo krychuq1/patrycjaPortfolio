@@ -13,41 +13,32 @@
   @include breakpoint(desktop) {
     .project-holder{
       .img-holder{
-        //border: 1px solid red;
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        //border: 1px solid red;
         &--inner{
-          //border: 1px solid blue;
-          &-inner{
-            //border: 1px solid deeppink;
-           &.odd{
-             padding-left: 16px;
-             margin-top: -60px;
-
-           }
-            &.second{
-              margin-top: 0;
-            }
-            &.even{
-              padding-right: 16px;
-
-            }
-            &.first{
-              margin-top: 60px;
-            }
-            //border: 1px solid deeppink;
-
+          cursor: pointer;
+          &:first-child{
+            margin-top: 60px;
           }
-
-          max-width : 50%;
           &:nth-child(odd){
-            //padding-right: 10px;
+            .img-holder--inner-inner{
+              padding-right: 16px;
+            }
           }
           &:nth-child(even){
-            //padding-left: 10px;
+            .img-holder--inner-inner{
+              padding-left: 16px;
+              margin-top: -60px;
+            }
           }
+          &:nth-child(2){
+            .img-holder--inner-inner{
+              margin-top: 0;
+
+            }
+          }
+          max-width : 50%;
         }
 
       }

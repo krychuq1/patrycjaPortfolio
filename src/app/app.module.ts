@@ -15,6 +15,7 @@ import {ContactComponent} from './pages/contact/contact.component';
 import {ProjectSingleComponent} from './pages/project-single/project-single.component';
 import {SafeHtmlPipe} from './pipes/safe-html-pipe';
 import {HeaderService} from './services/header.service';
+import {SortingService} from './services/sorting.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import {HeaderService} from './services/header.service';
     HttpClientModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [LanguageService, ContentService, HeaderService],
+  providers: [LanguageService, ContentService, HeaderService, SortingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

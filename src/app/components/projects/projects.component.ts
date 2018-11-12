@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {LanguageService} from '../../services/language.service';
+import {SortingService} from '../../services/sorting.service';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.html',
@@ -7,17 +8,19 @@ import {LanguageService} from '../../services/language.service';
 })
 export class ProjectsComponent {
   filter: string;
-  constructor(private languageService: LanguageService) {
+  constructor(private languageService: LanguageService, private sortingService: SortingService) {
     this.filter = 'any';
     // this.languageService.changeLanguage.subscribe(() => {
     //   this.getContent();
     // });
+    this.sortingService.sortingEven.subscribe((val) => {
+      this.filter = val;
+    });
   }
   receiveMessage($event) {
     this.filter = $event;
   }
   public setLanguage(lan: string) {
-    // console.log('setting language')
     this.languageService.setLanguage(lan);
     // this.getContent();
   }
