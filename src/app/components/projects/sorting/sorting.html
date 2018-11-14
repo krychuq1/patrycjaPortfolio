@@ -5,6 +5,7 @@
   <div class="menu" [ngClass]="showSorting ? 'show' : ''">
     <span (click)="sendFilter('any')">{{content['all']}}</span>
     <span (click)="sendFilter('concept')">{{content['concept']}}</span>
+    <span (click)="sendFilter('uiux')">{{content['uiux']}}</span>
     <span (click)="sendFilter('games')">{{content['game']}}</span>
     <span (click)="sendFilter('webDesign')">{{content['webDesign']}}</span>
     <span (click)="sendFilter('logo')">{{content['logo']}}</span>

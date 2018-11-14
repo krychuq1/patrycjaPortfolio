@@ -33,7 +33,7 @@
       <p (click)="openBurger()" routerLink="/">{{content['mainPage']}}</p>
       <p routerLink="about" (click)="openBurger()">{{content['about']}}</p>
       <p (click)="openBurger()" routerLink="contact" >{{content['contact']}}</p>
-      <app-sorting class="sorting"></app-sorting>
+      <app-sorting class="sorting" *ngIf="router.url === '/'"></app-sorting>
     </div>
     <div class="images">
       <img src="assets/header/fb.png" alt="facebook" (click)="openBurger();

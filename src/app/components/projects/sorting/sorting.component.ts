@@ -23,6 +23,7 @@ export class SortingComponent {
     });
     this.headerService.homeRoute.subscribe(() => {
       this.showSorting = false;
+      this.sendFilter('any');
     });
   }
   @Output() filterEvent = new EventEmitter<string>();
