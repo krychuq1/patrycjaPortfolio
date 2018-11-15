@@ -10,11 +10,18 @@ import {ActivatedRoute} from '@angular/router';
 export class ProjectSingleComponent implements OnInit {
   contentUrl: string;
   content: object;
-  projectName: string;
+  imgLoading: boolean;
+  contentLoading: boolean;
   key: string;
+  local: any;
+
   constructor(private languageService: LanguageService,
               private contentService: ContentService,
               private activatedRoute: ActivatedRoute) {
+    this.imgLoading = true;
+    this.contentLoading = true;
+    this.local = localStorage;
+
     this.contentUrl = 'page/single-project/';
     this.getContent();
     this.languageService.changeLanguage.subscribe(() => {
@@ -34,6 +41,7 @@ export class ProjectSingleComponent implements OnInit {
   getContent() {
     this.contentService.getContent(this.contentUrl).then((content) => {
       this.content = content;
+      this.contentLoading = false;
     }, err => {
       console.error(err);
     });
@@ -41,6 +49,8 @@ export class ProjectSingleComponent implements OnInit {
   scrollToTop(): void{
     window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
   }
-
+  imgLoaded() {
+      this.imgLoading = false;
+  }
 
 }

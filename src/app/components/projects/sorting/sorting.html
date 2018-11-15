@@ -3,14 +3,14 @@
     <span>{{content['sort']}}</span>
   </div>
   <div class="menu" [ngClass]="showSorting ? 'show' : ''">
-    <span (click)="sendFilter('any')">{{content['all']}}</span>
-    <span (click)="sendFilter('concept')">{{content['concept']}}</span>
-    <span (click)="sendFilter('uiux')">{{content['uiux']}}</span>
-    <span (click)="sendFilter('games')">{{content['game']}}</span>
-    <span (click)="sendFilter('webDesign')">{{content['webDesign']}}</span>
-    <span (click)="sendFilter('logo')">{{content['logo']}}</span>
-    <span (click)="sendFilter('print')">{{content['print']}}</span>
-    <span (click)="sendFilter('visual')">{{content['identity']}}</span>
+    <span (click)="sendFilter('any')" [ngClass]="filter === 'any' ? 'selected' : ''">{{content['all']}}</span>
+    <span (click)="sendFilter('concept')" [ngClass]="filter === 'concept' ? 'selected' : ''">{{content['concept']}}</span>
+    <span (click)="sendFilter('uiux')" [ngClass]="filter === 'uiux' ? 'selected' : ''">{{content['uiux']}}</span>
+    <span (click)="sendFilter('games')" [ngClass]="filter === 'games' ? 'selected' : ''">{{content['game']}}</span>
+    <span (click)="sendFilter('webDesign')" [ngClass]="filter === 'webDesign' ? 'selected' : ''">{{content['webDesign']}}</span>
+    <span (click)="sendFilter('logo')" [ngClass]="filter === 'logo' ? 'selected' : ''">{{content['logo']}}</span>
+    <span (click)="sendFilter('print')" [ngClass]="filter === 'print' ? 'selected' : ''">{{content['print']}}</span>
+    <span (click)="sendFilter('visual')" [ngClass]="filter === 'visual' ? 'selected' : ''">{{content['identity']}}</span>
 
   </div>
 

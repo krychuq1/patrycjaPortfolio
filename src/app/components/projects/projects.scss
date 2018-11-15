@@ -7,6 +7,21 @@
   }
   .languages {
     display: none;
+    p{
+      &.selected{
+        font-weight: 500;
+      }
+    }
+  }
+  .img-holder{
+    &--inner{
+      &-inner {
+        position: relative;
+        .img-hover {
+          display: none;
+        }
+      }
+    }
   }
 }
 

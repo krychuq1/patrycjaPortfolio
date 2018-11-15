@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {LanguageService} from '../../services/language.service';
 import {SortingService} from '../../services/sorting.service';
 import {ContentService} from '../../services/content.service';
@@ -9,17 +9,15 @@ import {ContentService} from '../../services/content.service';
 })
 export class ProjectsComponent {
   filter: string;
-  contentUrl: string;
-  content: object;
+  local: any;
+
+  @Input() content;
+
   constructor(private languageService: LanguageService,
               private sortingService: SortingService, private contentService: ContentService) {
     this.filter = 'any';
-    this.contentUrl = 'component/projects/';
-    this.getContent();
+    this.local = localStorage;
 
-    this.languageService.changeLanguage.subscribe(() => {
-      this.getContent();
-    });
     this.sortingService.sortingEven.subscribe((val) => {
       this.filter = val;
     });
@@ -31,12 +29,4 @@ export class ProjectsComponent {
     this.languageService.setLanguage(lan);
     // this.getContent();
   }
-  getContent() {
-    this.contentService.getContent(this.contentUrl).then((content) => {
-      this.content = content;
-    }, err => {
-      console.error(err);
-    });
-  }
-
 }

@@ -2,11 +2,12 @@
 
   <div class="project-holder--inner">
     <div class="languages">
-      <p (click)="setLanguage('en')" class="en">en</p> <span class="line">|</span>
-      <p (click)="setLanguage('pl')" class="pl">pl</p>
+      <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>
+      <span class="line">|</span>
+      <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>
     </div>
 
-    <app-sorting (filtert)="receiveMessage($event)" class="sorting"></app-sorting>
+    <app-sorting (filter)="receiveMessage($event)" class="sorting"></app-sorting>
     <div class="img-holder">
       <div class="img-holder--inner" *ngIf="filter === 'concept' || filter === 'any' || filter === 'uiux'">
         <div class="img-holder--inner-inner  first">

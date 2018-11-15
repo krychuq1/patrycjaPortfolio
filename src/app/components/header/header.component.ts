@@ -1,4 +1,4 @@
-import {Component, HostListener, Inject} from '@angular/core';
+import {Component, HostListener, Inject, Input} from '@angular/core';
 import {LanguageService} from '../../services/language.service';
 import {ContentService} from '../../services/content.service';
 import {Router} from '@angular/router';
@@ -11,20 +11,17 @@ import {HeaderService} from '../../services/header.service';
   styleUrls: ['./header.scss']
 })
 export class HeaderComponent {
-  contentUrl: string;
-  content: object;
   navBurger: boolean;
   isMobile: boolean;
+  local: any;
+  @Input() content;
   constructor(private languageService: LanguageService,
               private contentService: ContentService, public router: Router,
   @Inject(DOCUMENT) private document: Document, private headerService: HeaderService) {
-    this.contentUrl = 'component/header/';
     this.navBurger = false;
-    this.getContent();
     this._checkDevice();
-    this.languageService.changeLanguage.subscribe(() => {
-      this.getContent();
-    });
+    this.local = localStorage;
+
   }
   @HostListener('window:resize', ['$event'])
   onResize(event?): void {
@@ -35,19 +32,9 @@ export class HeaderComponent {
       parseFloat(getComputedStyle(document.querySelector('body'))['font-size']));
     this.navBurger = (innerWidth >= 64);
     this.isMobile = (innerWidth < 64);
-    console.log('here, ', this.navBurger);
   }
   public setLanguage(lan: string) {
-    console.log('setting language')
     this.languageService.setLanguage(lan);
-    this.getContent();
-  }
-  getContent() {
-    this.contentService.getContent(this.contentUrl).then((content) => {
-      this.content = content;
-    }, err => {
-      console.error(err);
-    });
   }
   public openBurger() {
     if(this.isMobile){

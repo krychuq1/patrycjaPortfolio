@@ -1,7 +1,8 @@
-<div class="project-single" *ngIf="content" >
+<div class="project-single"  *ngIf="!imgLoading && ! contentLoading" >
   <div class="languages">
-    <p (click)="setLanguage('en')" class="en">en</p> <span class="line">|</span>
-    <p (click)="setLanguage('pl')" class="pl">pl</p>
+    <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>
+    <span class="line">|</span>
+    <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>
   </div>
 
   <h1 *ngIf="content[key + 'Header']">{{content[key + 'Header']}}</h1>
@@ -25,3 +26,16 @@
 
 
 </div>
+<!---->
+<div class="sk-three-bounce subPage" *ngIf="imgLoading || contentLoading">
+  <div>
+    <div class="sk-child sk-bounce1"></div>
+    <div class="sk-child sk-bounce2"></div>
+    <div class="sk-child sk-bounce3"></div>
+  </div>
+
+  <p>loading</p>
+</div>
+
+<!--preload img-->
+<img src="assets/projects/single/{{key}}.jpg" alt="project" style="display: none" (load)="imgLoaded()">

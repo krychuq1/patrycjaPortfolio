@@ -9,8 +9,11 @@ import {Component} from '@angular/core';
 export class ContactComponent {
   contentUrl: string;
   content: object;
+  local: any;
+
   constructor(private languageService: LanguageService, private contentService: ContentService) {
     this.contentUrl = 'page/contact/';
+    this.local = localStorage;
     this.getContent();
     this.languageService.changeLanguage.subscribe(() => {
       this.getContent();

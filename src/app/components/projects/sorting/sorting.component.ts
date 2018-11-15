@@ -12,7 +12,7 @@ export class SortingComponent {
   contentUrl: string;
   content: object;
   showSorting: boolean;
-
+  filter: string;
   constructor(private languageService: LanguageService, private contentService: ContentService,
               private headerService: HeaderService, private sortingService: SortingService) {
     this.contentUrl = 'component/sorting/';
@@ -40,6 +40,7 @@ export class SortingComponent {
     this.filterEvent.emit(filter);
     // from header
     this.sortingService.changeSorting(filter);
+    this.filter = filter;
   }
   changeSorting(): void {
     this.showSorting = !this.showSorting;

@@ -1,13 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="app" *ngIf="!isLoading">
-  <app-header></app-header>
-  <app-projects *ngIf="router.url === '/'"></app-projects>
+<div class="app" *ngIf="!imgLoading && ! contentLoading">
+  <app-header [content]="headerContent"></app-header>
+  <app-projects [content]="projectsContent" *ngIf="router.url === '/' || router.url.indexOf('?') > -1"></app-projects>
   <router-outlet></router-outlet>
 </div>
-<div class="sk-three-bounce">
-  <div class="sk-child sk-bounce1"></div>
-  <div class="sk-child sk-bounce2"></div>
-  <div class="sk-child sk-bounce3"></div>
+<div class="sk-three-bounce" *ngIf="imgLoading || contentLoading">
+  <div>
+    <div class="sk-child sk-bounce1"></div>
+    <div class="sk-child sk-bounce2"></div>
+    <div class="sk-child sk-bounce3"></div>
+  </div>
+
+  <p>loading</p>
 </div>
 <!--pre load-->
 <img src="../../../assets/projects/&learning.jpg"

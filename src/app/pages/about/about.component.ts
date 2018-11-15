@@ -9,12 +9,20 @@ import {Component} from '@angular/core';
 export class AboutComponent {
   contentUrl: string;
   content: object;
+  imgLoading: boolean;
+  contentLoading: boolean;
+  local: any;
+
   constructor(private languageService: LanguageService, private contentService: ContentService) {
     this.contentUrl = 'page/about/';
+    this.local = localStorage;
+
     this.getContent();
     this.languageService.changeLanguage.subscribe(() => {
       this.getContent();
     });
+    this.imgLoading = true;
+    this.contentLoading = true;
   }
   public setLanguage(lan: string) {
     this.languageService.setLanguage(lan);
@@ -23,8 +31,13 @@ export class AboutComponent {
   getContent() {
     this.contentService.getContent(this.contentUrl).then((content) => {
       this.content = content;
+      this.contentLoading = false;
+
     }, err => {
       console.error(err);
     });
+  }
+  imgLoaded() {
+    this.imgLoading = false;
   }
 }

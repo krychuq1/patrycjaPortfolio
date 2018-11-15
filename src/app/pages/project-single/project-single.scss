@@ -3,6 +3,11 @@
 .project-single{
   .languages{
     display: none;
+    p{
+      &.selected{
+        font-weight: 500;
+      }
+    }
   }
   iframe{
     margin-top: 20px;

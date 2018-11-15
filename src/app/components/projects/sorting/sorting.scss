@@ -41,7 +41,9 @@
     margin-right: 10px;
     cursor: pointer;
     padding: 3px 0;
-
+    &.selected{
+      font-weight: 500;
+    }
     //display: block;
     &:last-child{
       padding-right: 0;

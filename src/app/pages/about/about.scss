@@ -22,6 +22,11 @@
   }
   .languages{
     display: none;
+    p{
+      &.selected{
+        font-weight: 500;
+      }
+    }
   }
 }
 @include breakpoint(desktop) {

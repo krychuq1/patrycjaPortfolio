@@ -4,6 +4,11 @@
   padding-top: 70px;
   .languages{
     display: none;
+    p{
+      &.selected{
+        font-weight: 500;
+      }
+    }
   }
   .contact-info{
     max-width: 400px;

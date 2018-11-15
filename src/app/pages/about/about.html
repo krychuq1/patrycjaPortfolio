@@ -1,7 +1,8 @@
-<div class="about">
+<div class="about" *ngIf="!imgLoading && ! contentLoading">
   <div class="languages">
-    <p (click)="setLanguage('en')" class="en">en</p> <span class="line">|</span>
-    <p (click)="setLanguage('pl')" class="pl">pl</p>
+    <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>
+    <span class="line">|</span>
+    <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>
   </div>
   <img src="assets/about/me.jpg">
   <div class="about-text">
@@ -11,3 +12,15 @@
     </span>
   </div>
 </div>
+
+<div class="sk-three-bounce subPage" *ngIf="imgLoading || contentLoading">
+  <div>
+    <div class="sk-child sk-bounce1"></div>
+    <div class="sk-child sk-bounce2"></div>
+    <div class="sk-child sk-bounce3"></div>
+  </div>
+
+  <p>loading</p>
+</div>
+
+<img src="assets/about/me.jpg" style="display: none" (load)="imgLoaded()">
