@@ -61,6 +61,7 @@
   }
 }
 .header-text{
+  //border: 1px solid orange;
   text-align: left;
   p{
     font-size: 0.8rem;
@@ -69,6 +70,7 @@
 }
 
 .open-nav{
+  //border: 1px solid pink;
   //border: 1px solid red;
   height: 100vh;
   position: absolute;
@@ -119,10 +121,17 @@
 
 }
 @include breakpoint(desktop) {
+  .header-holder{
+    position: fixed;
+    //border: 1px solid red;
+    max-width: 255px;
+  }
   .sorting{
     display: block;
   }
   .header{
+    //border: 1px solid blue;
+    //position: fixed;
     max-width: 255px;
     min-width: 255px;
     margin-top: 100px;

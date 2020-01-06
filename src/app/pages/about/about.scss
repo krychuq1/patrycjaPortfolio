@@ -31,6 +31,7 @@
 }
 @include breakpoint(desktop) {
   .about{
+    margin-left: 260px;
     position: relative;
     display: flex;
     align-items: center;

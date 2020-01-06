@@ -21,7 +21,7 @@ export class AppComponent {
     localStorage.setItem('lan', 'pl');
     this.imgLoading = true;
     this.contentLoading = true;
-    this.imgCounter = 16;
+    this.imgCounter = 12;
     this.imgToLoad = 0;
     this.headerContentUrl = 'component/header/';
     this.projectsContentUrl = 'component/projects/';

@@ -28,6 +28,7 @@
   @include breakpoint(desktop) {
     .project-holder{
       margin-top: 50px;
+      margin-left: 260px;
       .img-holder{
         display: flex;
         flex-wrap: wrap;

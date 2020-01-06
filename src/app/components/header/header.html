@@ -1,13 +1,29 @@
-<div class="header">
-  <div class="logo" routerLink="/" (click)="goHome()">
-    <img src="../../../assets/header/logo.png">
-  </div>
-  <div class="language-burger">
-    <div class="languages">
-      <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>
-      <span class="line">|</span>
-      <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>
+<div class="header-holder">
+  <div class="header">
+    <div class="logo" routerLink="/" (click)="goHome()">
+      <img src="../../../assets/header/logo.png">
     </div>
+    <div class="language-burger">
+      <div class="languages">
+        <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>
+        <span class="line">|</span>
+        <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>
+      </div>
+      <button class="hamburger hamburger--collapse"
+              (click)="openBurger()" [ngClass]="navBurger ? 'is-active' : ''"
+              type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+      </button>
+    </div>
+  </div>
+  <div class="header-text" *ngIf="content && router.url === '/' || !isMobile">
+    <p>{{content['title']}}</p>
+    <!--<p>{{content['subTitle']}}</p>-->
+
+  </div>
+  <div class="open-nav" [ngClass]="navBurger ? 'show' : ''" *ngIf="content">
     <button class="hamburger hamburger--collapse"
             (click)="openBurger()" [ngClass]="navBurger ? 'is-active' : ''"
             type="button">
@@ -15,37 +31,24 @@
       <span class="hamburger-inner"></span>
     </span>
     </button>
-  </div>
-</div>
-<div class="header-text" *ngIf="content && router.url === '/' || !isMobile">
-  <p>{{content['title']}}</p>
-  <!--<p>{{content['subTitle']}}</p>-->
-
-</div>
-<div class="open-nav" [ngClass]="navBurger ? 'show' : ''" *ngIf="content">
-  <button class="hamburger hamburger--collapse"
-          (click)="openBurger()" [ngClass]="navBurger ? 'is-active' : ''"
-          type="button">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-  <div class="open-nav--holder">
-    <div class="nav-text" >
-      <p (click)="openBurger()" routerLink="/">{{content['mainPage']}}</p>
-      <p routerLink="about" (click)="openBurger()">{{content['about']}}</p>
-      <p (click)="openBurger()" routerLink="contact" >{{content['contact']}}</p>
-      <app-sorting class="sorting" *ngIf="router.url === '/'"></app-sorting>
-    </div>
-    <div class="images">
-      <img src="assets/header/fb.png" alt="facebook" (click)="openBurger();
+    <div class="open-nav--holder">
+      <div class="nav-text" >
+        <p (click)="openBurger()" routerLink="/">{{content['mainPage']}}</p>
+        <p routerLink="about" (click)="openBurger()">{{content['about']}}</p>
+        <p (click)="openBurger()" routerLink="contact" >{{content['contact']}}</p>
+        <app-sorting class="sorting" *ngIf="router.url === '/'"></app-sorting>
+      </div>
+      <div class="images">
+        <img src="assets/header/fb.png" alt="facebook" (click)="openBurger();
       goTo('https://www.facebook.com/patrycja.musur');">
-      <img src="assets/header/insta.png" alt="instagram" (click)="openBurger();
+        <img src="assets/header/insta.png" alt="instagram" (click)="openBurger();
        goTo('https://instagram.com/patrycjaxmusur/');">
-      <img src="assets/header/linkedin.png" alt="linkedin" (click)="openBurger();
+        <img src="assets/header/linkedin.png" alt="linkedin" (click)="openBurger();
       goTo('https://www.linkedin.com/in/patrycjamusur');">
+      </div>
     </div>
-  </div>
 
+
+  </div>
 
 </div>

@@ -58,6 +58,7 @@
 @include breakpoint(desktop) {
   .project-single{
     margin-top: -20px;
+    margin-left: 260px;
     .languages{
       position: absolute;
       display: flex;
