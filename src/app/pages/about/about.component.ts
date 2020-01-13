@@ -1,43 +1,31 @@
 import {LanguageService} from '../../services/language.service';
 import {ContentService} from '../../services/content.service';
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 @Component({
   templateUrl: './about.html',
   styleUrls: ['./about.scss']
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit{
   contentUrl: string;
   content: object;
   imgLoading: boolean;
-  contentLoading: boolean;
   local: any;
+  animate = false;
 
   constructor(private languageService: LanguageService, private contentService: ContentService) {
     this.contentUrl = 'page/about/';
     this.local = localStorage;
-
-    this.getContent();
-    this.languageService.changeLanguage.subscribe(() => {
-      this.getContent();
-    });
     this.imgLoading = true;
-    this.contentLoading = true;
-  }
-  public setLanguage(lan: string) {
-    this.languageService.setLanguage(lan);
-    this.getContent();
-  }
-  getContent() {
-    this.contentService.getContent(this.contentUrl).then((content) => {
-      this.content = content;
-      this.contentLoading = false;
-
-    }, err => {
-      console.error(err);
-    });
   }
   imgLoaded() {
     this.imgLoading = false;
+    setTimeout(() => {
+      this.animate = true;
+    }, 300);
+  }
+
+  ngOnInit(): void {
+
   }
 }

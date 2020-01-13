@@ -5,9 +5,13 @@
 }
 @include breakpoint(desktop) {
   app-header{
-    max-width: 255px;
+    width: 255px;
   }
   .app{
+    .app-inner{
+      margin: 0 auto;
+      width: 1024px;
+    }
     position: relative;
     max-width: 1300px;
     margin: 0 auto;

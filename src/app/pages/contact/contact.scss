@@ -13,6 +13,14 @@
   .contact-info{
     max-width: 400px;
     text-align: left;
+    opacity: 0;
+    font-size: 14px;
+    margin-top: 23px;
+    &.show{
+      opacity: 1;
+      transition: $animate;
+
+    }
   }
 }
 @include breakpoint(desktop) {

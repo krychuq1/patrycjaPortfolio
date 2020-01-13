@@ -1,0 +1,32 @@
+@import "../../../styles";
+.project-page{
+  .logo{
+    height: 74px;
+  }
+  h3{
+  }
+
+}
+@include breakpoint(desktop) {
+  .project-page{
+    .logo{
+      margin-left: 40px;
+      height: 82.83px;
+    }
+    .insta{
+      margin-left: 80px;
+    }
+    .gajol-img{
+      display: flex;
+      align-items: flex-start;
+      .left{
+        width: 389px;
+        margin-right: 24px;
+      }
+      .right{
+        width: 227px !important;
+      }
+
+    }
+  }
+}

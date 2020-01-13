@@ -1,0 +1,580 @@
+[
+  {
+    "_id": "5be42db7c21f9a002f2ae102",
+    "name": "single-proejct",
+    "language": "pl",
+    "brand": "pataPortfolio",
+    "type": "page",
+    "content": [
+      {
+        "key": "key",
+        "value": "value"
+      }
+    ]
+  },
+  {
+    "_id": "5c1035f4d80232002f281e01",
+    "name": "mysimplesite",
+    "language": "en",
+    "brand": "pataPortfolio",
+    "type": "page",
+    "content": [
+      {
+        "key": "key1",
+        "value": "here is my page"
+      }
+    ]
+  },
+  {
+    "_id": "5bcf984e0dc452002f785bfb",
+    "name": "header",
+    "language": "pl",
+    "brand": "pataPortfolio",
+    "type": "component",
+    "content": [
+      {
+        "key": "title",
+        "value": "Projektantka graficzna oraz UI / UX, koncept developer z zawodu."
+      },
+      {
+        "key": "mainPage",
+        "value": "strona główna"
+      },
+      {
+        "key": "about",
+        "value": "o mnie"
+      },
+      {
+        "key": "contact",
+        "value": "kontakt"
+      }
+    ]
+  },
+  {
+    "_id": "5bdb60eecba0c2002f8b35bf",
+    "name": "about",
+    "language": "en",
+    "brand": "pataPortfolio",
+    "type": "page",
+    "content": [
+      {
+        "key": "pataInfo",
+        "value": " Patrycja, 24 years old, graphic designer and UI / UX designer. A graduate from KEA Copenhagen School of Design and Technology), in two majors, Multimedia Design and Communication (AP) and Digital Concept Development (BA). After four years in the capital of Scandinavia, I currently live in Cracow. I mainly design digital solutions but I also have experience with offline materials. I design graphics, websites, mobile applications, interfaces, games, animations and create digital concepts. I believe in karma, I am a movie freak, music lover and weightlifting passionate."
+      },
+      {
+        "key": "contact",
+        "value": "Feel free to contact me in case you have any questions or if you want to work with me. "
+      },
+      {
+        "key": "contactPhone",
+        "value": "phone: 0045 81 92 78 16"
+      },
+      {
+        "key": "contactEmail",
+        "value": "email: patrycja.musur@gmail.com"
+      }
+    ]
+  },
+  {
+    "_id": "5bdb6172cba0c2002f8b35c0",
+    "name": "about",
+    "language": "pl",
+    "brand": "pataPortfolio",
+    "type": "page",
+    "content": [
+      {
+        "value": "Patrycja, 24 lata, grafik oraz projektant UI/UX. Absolwentka Wyższej Szkoły Projektowania i Technologii w Kopenhadze (KEA Copenhagen School of Design and Technology), na dwóch kierunkach, Multimedia Design and Communication (AP) oraz Digital Concept Development (BA). Po czterech latach w stolicy Skandynawii aktualnie mieszkam w Krakowie. Zajmuje się głównie projektowaniem rozwiązań dla sieci, ale mam także doświadczenie z drukiem. Projektuje grafikę, strony internetowe, aplikacje mobilne, interfejsy, gry, animacje oraz tworze koncepty.",
+        "key": "pataInfo"
+      }
+    ]
+  },
+  {
+    "_id": "5be42d9fc21f9a002f2ae101",
+    "name": "single-project",
+    "language": "en",
+    "brand": "pataPortfolio",
+    "type": "page",
+    "content": [
+      {
+        "key": "poster-challengeHeader",
+        "value": "SUMMER CHALLENGE | POSTERS"
+      },
+      {
+        "key": "poster-challengeDes",
+        "value": "Summer poster challenge was creative counting down until the summer comes. I designed one summer poster each day for a week until 21st of June."
+      },
+      {
+        "key": "tattooHeader",
+        "value": "DRUNKEN SAMURAI | VISUAL IDENTITY"
+      },
+      {
+        "key": "tattooDes",
+        "value": "This project was developed for a tattoo shop called Drunken Samurai. "
+      },
+      {
+        "key": "valentinesHeader",
+        "value": "GIVE BOO SOME LOVE | GAME"
+      },
+      {
+        "key": "valentinesDes",
+        "value": "Give Boo some love, it is a project that was developed on Valentine’s Day 2018. It is a fun, interactive game where you need to follow Boo with an umbrella and protect him from the rain until his heart is full of love. I designed the character, animate it and developed simple game interface, so we can all help Boo and bring joy to his life. Try it out <a href=\"https://boovalentines.firebaseapp.com/\" style=\"text-decoration: none;  color: black; font-weight: bold\" target=\"_blank\"> HERE. </a>"
+      },
+      {
+        "key": "popHeader",
+        "value": "PIECE OF PLANT | WEB DESIGN"
+      },
+      {
+        "key": "popDes",
+        "value": "This project was developed for a garden designer called piece of plant. See <a href=\"https://pieceofplant.sevenamstudio.com/\" target=”_blank” style=\"text-decoration: none;  color: black; font-weight: bold\"> HERE. </a>"
+      },
+      {
+        "key": "otisHeader",
+        "value": "EXTREME LIFE OF OTIS. THE BANANA. | ILLUSTRATED BOOK"
+      },
+      {
+        "key": "otisDes",
+        "value": "Extreme life of Otis\" is a little illustrated book about The Banana called Otis and his extreme adventures. It consists of four illustrations, \"The scratch\", \"Fly away\", \"Ladder\" and \"Banana rain\" plus the cover. You can follow extreme like of crazy Banana in a small book that has very minimalistic and simple design, but it shows a lot of emotions that Otis is feeling in his journey."
+      },
+      {
+        "key": "mohaHeader",
+        "value": "MOHA | JUICE BAR"
+      },
+      {
+        "key": "mohaDes",
+        "value": "Moha is a juice bar, the project includes parts of visual identity like logo, some illustrations, website design and product label design. "
+      },
+      {
+        "key": "&learningCredits",
+        "value": "Concept was developed by a group of seven people. I was responsible for UI, and concept, ideation."
+      },
+      {
+        "key": "arlaCredits",
+        "value": "The project was developed by a group of five people. I have been responsible for the info-graphics, graphics for the video,  landing page UI and concept development. "
+      },
+      {
+        "key": "imreadCredits",
+        "value": "The project was developed by a group of three people, including Ausrine Kriucokaite and Eidvile Bagdonaite. I have been responsible for UI/UX and concept development. "
+      },
+      {
+        "key": "gajolCredits",
+        "value": "The concept was developed by a team of people. I was working with concept, web design, slogan design and offline materials.  Credits for photography: Rebecca Kjaergaard Leôn | Packaging design: Alex Huban "
+      },
+      {
+        "key": "edcCredits",
+        "value": "The project was developed by a group of three people, including Ausrine Kriucokaite and Ieva Silina. I have been responsible for UI/UX and concept development. "
+      },
+      {
+        "key": "bookHeader",
+        "value": "I TY MOZESZ BYC AUTOREM KSIAZKI | BOOK COVER"
+      },
+      {
+        "key": "bookDes",
+        "value": "“You can be a book author as well” is an English title for a book cover that was created for one of the primary schools in Poland, where kids send their stories about specific topics and the best once were published in a book."
+      },
+      {
+        "key": "stpHeader",
+        "value": "SAINT PATRICK'S DAY | MOBILE GAME"
+      },
+      {
+        "key": "stpDes",
+        "value": "Try it out <a href=\"https://stpatrick.sevenamstudio.com/?play=\" style=\"text-decoration: none;  color: black; font-weight: bold\" target=\"_blank\"> HERE. </a>"
+      }
+    ]
+  },
+  {
+    "_id": "5be43c25c21f9a002f2ae103",
+    "name": "contact",
+    "language": "en",
+    "brand": "pataPortfolio",
+    "type": "page",
+    "content": [
+      {
+        "key": "contactInfo",
+        "value": "Feel free to contact me in case you have any questions or if you want to work with me. "
+      },
+      {
+        "key": "contactPhone",
+        "value": "phone: 531 387 751"
+      },
+      {
+        "key": "contactEmail",
+        "value": "email: patrycja.musur@gmail.com"
+      }
+    ]
+  },
+  {
+    "_id": "5be48c7dc21f9a002f2ae104",
+    "name": "single-project",
+    "language": "pl",
+    "brand": "pataPortfolio",
+    "type": "page",
+    "content": [
+      {
+        "value": "LETNIE WYZWANIE | PLAKATY",
+        "key": "poster-challengeHeader"
+      },
+      {
+        "value": "Letnie wyzwanie to kreatywne odliczanie do lata. Zaprojektowałam jeden letni plakat każdego dnia tygodnia aż do 21 czerwca.",
+        "key": "poster-challengeDes"
+      },
+      {
+        "value": "DRUNKEN SAMURAI | IDENTYFIKACJA WIZUALNA",
+        "key": "tattooHeader"
+      },
+      {
+        "value": "Ten projekt został opracowany dla sklepu z tatuażami o nazwie Drunken Samurai.",
+        "key": "tattooDes"
+      },
+      {
+        "value": "DAJ BOO TROCHĘ MIŁOŚCI | GRA INTERAKTYWNA",
+        "key": "valentinesHeader"
+      },
+      {
+        "value": "Daj Boo trochę miłości, to projekt opracowany na Walentynki 2018. Jest to zabawna, interaktywna gra, w której musisz podążać za Boo z parasolem i chronić go przed deszczem, aż jego serce będzie pełne miłości. Zaprojektowałam postać, animacje i opracowałam prosty interfejs gry, abyśmy wszyscy mogli pomóc Boo i wnieść radość do jego życia. Wypróbuj <a href=\"https://boovalentines.firebaseapp.com/\" style=\"text-decoration: none;  color: black; font-weight: bold\" target=\"_blank\"> TUTAJ. </a>",
+        "key": "valentinesDes"
+      },
+      {
+        "value": "PIECE OF PLANT | STRONA INTERNETOWA",
+        "key": "popHeader"
+      },
+      {
+        "value": "Ten projekt został opracowany dla projektanta ogrodów o nazwie piece of plant. Zobacz <a href=\"https://pieceofplant.sevenamstudio.com/\"  style=\"text-decoration: none;  color: black; font-weight: bold\" target=\"_blank\"> TUTAJ. </a>",
+        "key": "popDes"
+      },
+      {
+        "value": "EKSTREMALNE ŻYCIE OTISA. BANANA. | ILUSTROWANA KSIĄŻKA",
+        "key": "otisHeader"
+      },
+      {
+        "value": "\"Ekstremalne życie Otisa\" jest to mini książeczka o Bananie zwanym Otis oraz o jego ekstremalnych przygodach. Składa się ona z czterech ilustracji: \"Zadarcie\", \"Odlatuje\", \"Drabina\" oraz \"Bananowy deszcz\" plus okładka.",
+        "key": "otisDes"
+      },
+      {
+        "value": "MOHA | IDENTYFIKACJA WIZUALNA",
+        "key": "mohaHeader"
+      },
+      {
+        "value": "Moha to bar z sokami, projekt obejmuje elementy identyfikacji wizualnej, takie jak logo, ilustracje, projekt strony internetowej i projekt etykiety produktu.",
+        "key": "mohaDes"
+      },
+      {
+        "value": "Koncepcję opracowała grupa siedmiu osób. Byłam odpowiedzialna za interfejs użytkownika, koncepcję oraz rozwój pomysłu.",
+        "key": "&learningCredits"
+      },
+      {
+        "value": "Projekt został opracowany przez grupę pięciu osób. Odpowiadałam za info-grafiki, grafikę wideo, interfejs strony docelowej i tworzenie koncepcji.",
+        "key": "arlaCredits"
+      },
+      {
+        "value": "Projekt został opracowany przez grupę trzech osób, w tym Ausrine Kriucokaite i Eidvile Bagdonaite. Byłam odpowiedzialna za UI / UX i rozwój koncepcji.",
+        "key": "imreadCredits"
+      },
+      {
+        "value": "Koncepcja została opracowana przez zespół ludzi. Pracowałam nad koncepcją, projektowaniem strony internetowej, projektowaniem sloganów i materiałami offline. Fotografia: Rebecca Kjaergaard Leôn | Projekt opakowania: Alex Huban",
+        "key": "gajolCredits"
+      },
+      {
+        "value": "Projekt został opracowany przez grupę trzech osób, w tym Ausrine Kriucokaite i Ieva Silina. Byłam odpowiedzialna za UI / UX i rozwój koncepcji.",
+        "key": "edcCredits"
+      },
+      {
+        "value": "I TY MOŻESZ BYĆ AUTOREM KSIĄŻKI | OKŁADKA KSIĄŻKI",
+        "key": "bookHeader"
+      },
+      {
+        "value": "Projekt okładki został stworzony dla jednej ze szkół podstawowych w Polsce, gdzie dzieci wysyłają swoje historie o konkretnych tematach, a najlepsze zostają opublikowane w książce.",
+        "key": "bookDes"
+      },
+      {
+        "value": "Zagraj na telefonie klikając <a href= \"https://stpatrick.sevenamstudio.com/?play=\" style=\"text-decoration: none; color: black; font-weight: bold\" target=\"_blank\"> TUTAJ. </a>",
+        "key": "stpDes"
+      },
+      {
+        "value": "DZIEŃ ŚW. PATRYKA | GRA NA TELEFON",
+        "key": "stpHeader"
+      }
+    ]
+  },
+  {
+    "_id": "5be5520dcc8374002f4121f9",
+    "name": "contact",
+    "language": "pl",
+    "brand": "pataPortfolio",
+    "type": "page",
+    "content": [
+      {
+        "value": "Jeśli masz jakieś pytania lub chcesz ze mną współpracować, skontaktuj się ze mną.",
+        "key": "contactInfo"
+      },
+      {
+        "value": "telefon: 531 387 751",
+        "key": "contactPhone"
+      },
+      {
+        "value": "email: patrycja.musur@gmail.com",
+        "key": "contactEmail"
+      }
+    ]
+  },
+  {
+    "_id": "5bcf98380dc452002f785bfa",
+    "name": "header",
+    "language": "en",
+    "brand": "pataPortfolio",
+    "type": "component",
+    "content": [
+      {
+        "value": "Graphic designer and UI / UX, concept developer by profession.",
+        "key": "title"
+      },
+      {
+        "value": "home",
+        "key": "mainPage"
+      },
+      {
+        "value": "about",
+        "key": "about"
+      },
+      {
+        "value": "contact",
+        "key": "contact"
+      }
+    ]
+  },
+  {
+    "_id": "5be9fbb7a9caf2002f34d224",
+    "name": "projects",
+    "language": "pl",
+    "brand": "pataPortfolio",
+    "type": "component",
+    "content": [
+      {
+        "value": "&Learning | Koncept development",
+        "key": "&learning"
+      },
+      {
+        "value": "Arla | Koncept development",
+        "key": "arla"
+      },
+      {
+        "value": "Okładka książki | Druk",
+        "key": "book"
+      },
+      {
+        "value": "Booky | Aplikacja webowa ",
+        "key": "booky"
+      },
+      {
+        "value": "EDC | Koncept development",
+        "key": "edc"
+      },
+      {
+        "value": "Logo | Logofolio",
+        "key": "logos"
+      },
+      {
+        "value": "GaJol | Koncept development",
+        "key": "gajol"
+      },
+      {
+        "value": "ImRead | UX/UI",
+        "key": "imread"
+      },
+      {
+        "value": "Moha | Identyfikacja wizualna",
+        "key": "moha"
+      },
+      {
+        "value": "Ekstremalne życie Otisa. Banana. | Druk",
+        "key": "otis"
+      },
+      {
+        "value": "Piece of plant | Web design",
+        "key": "pop"
+      },
+      {
+        "value": "Letnie wyzwanie - plakaty | Druk",
+        "key": "poster-challenge"
+      },
+      {
+        "value": "Spotify \"It only gets better\" | Koncept development",
+        "key": "spotify"
+      },
+      {
+        "value": "Dzień Św. Patryka | Gra na telefon",
+        "key": "stp"
+      },
+      {
+        "value": "Drunken Samurai | Identyfikacja wizualna",
+        "key": "tattoo"
+      },
+      {
+        "value": "Daj Boo trochę miłości | Gra interaktywna ",
+        "key": "valentines"
+      }
+    ]
+  },
+  {
+    "_id": "5be9fbc6a9caf2002f34d225",
+    "name": "projects",
+    "language": "en",
+    "brand": "pataPortfolio",
+    "type": "component",
+    "content": [
+      {
+        "value": "&Learning | Concept development",
+        "key": "&learning"
+      },
+      {
+        "value": "Arla | Concept development",
+        "key": "arla"
+      },
+      {
+        "value": "Book cover | Print",
+        "key": "book"
+      },
+      {
+        "value": "Booky | Web app design",
+        "key": "booky"
+      },
+      {
+        "value": "EDC | Concept development ",
+        "key": "edc"
+      },
+      {
+        "value": "Logos | Logofolio",
+        "key": "logos"
+      },
+      {
+        "value": "GaJol | Concept development",
+        "key": "gajol"
+      },
+      {
+        "value": "ImRead | UX/UI",
+        "key": "imread"
+      },
+      {
+        "value": "Moha Juice Bar | Visual Identity ",
+        "key": "moha"
+      },
+      {
+        "value": "Extreme life of Otis. The banana. | Print",
+        "key": "otis"
+      },
+      {
+        "value": "Piece of Plant | Web design",
+        "key": "pop"
+      },
+      {
+        "value": "Summer poster challenge | Print ",
+        "key": "poster-challenge"
+      },
+      {
+        "value": "Spotify. It only gets better. | Concept development",
+        "key": "spotify"
+      },
+      {
+        "value": "St. Patrick's Day | Mobile game",
+        "key": "stp"
+      },
+      {
+        "value": "Drunken Samurai | Visual Identity",
+        "key": "tattoo"
+      },
+      {
+        "value": "Give Boo some love | Game",
+        "key": "valentines"
+      }
+    ]
+  },
+  {
+    "_id": "5bd0bdbd8642aa002f193840",
+    "name": "sorting",
+    "language": "pl",
+    "brand": "pataPortfolio",
+    "type": "component",
+    "content": [
+      {
+        "key": "sort",
+        "value": "sortuj >"
+      },
+      {
+        "key": "concept",
+        "value": "koncept development"
+      },
+      {
+        "key": "game",
+        "value": "gry"
+      },
+      {
+        "key": "webDesign",
+        "value": "web design"
+      },
+      {
+        "key": "logo",
+        "value": "logo"
+      },
+      {
+        "key": "print",
+        "value": "druk"
+      },
+      {
+        "key": "identity",
+        "value": "identyfikacja wizualna"
+      },
+      {
+        "key": "all",
+        "value": "ogół"
+      },
+      {
+        "key": "uiux",
+        "value": "UI / UX"
+      }
+    ]
+  },
+  {
+    "_id": "5bd0bc758642aa002f19383f",
+    "name": "sorting",
+    "language": "en",
+    "brand": "pataPortfolio",
+    "type": "component",
+    "content": [
+      {
+        "key": "sort",
+        "value": "sort >"
+      },
+      {
+        "key": "concept",
+        "value": "concept development"
+      },
+      {
+        "key": "game",
+        "value": "games"
+      },
+      {
+        "key": "webDesign",
+        "value": "web design"
+      },
+      {
+        "key": "logo",
+        "value": "logo"
+      },
+      {
+        "key": "print",
+        "value": "print"
+      },
+      {
+        "key": "identity",
+        "value": "visual identity"
+      },
+      {
+        "key": "all",
+        "value": "all"
+      },
+      {
+        "key": "uiux",
+        "value": "UI / UX"
+      }
+    ]
+  }
+]

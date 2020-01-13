@@ -1,88 +1,88 @@
-<div class="project-holder">
+<div class="project-holder" [ngClass]="animate ? 'show' : ''">
 
   <div class="project-holder--inner">
-    <div class="languages">
-      <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>
-      <span class="line">|</span>
-      <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>
-    </div>
+<!--    <div class="languages">-->
+<!--      <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>-->
+<!--      <span class="line">|</span>-->
+<!--      <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>-->
+<!--    </div>-->
 
     <app-sorting (filter)="receiveMessage($event)" class="sorting"></app-sorting>
     <div class="img-holder">
       <div class="img-holder--inner" *ngIf="filter === 'concept' || filter === 'any' || filter === 'uiux'">
         <div class="img-holder--inner-inner  first">
-          <div class="img-hover" [routerLink]="['/project/&learning']">
+          <div class="img-hover" [routerLink]="['/&learning']">
             <p>{{content['&learning']}}</p>
           </div>
           <!--concet-->
           <img src="../../../assets/projects/&learning.jpg"
                alt="andl"
-               [routerLink]="['/project/&learning']">
+               [routerLink]="['&learning']">
         </div>
 
       </div>
       <div class="img-holder--inner" *ngIf="filter === 'games' || filter === 'any' || filter === 'uiux'">
         <div class="img-holder--inner-inner odd">
-          <div class="img-hover" [routerLink]="['/project/stp']">
+          <div class="img-hover" [routerLink]="['/stp']">
             <p>{{content['stp']}}</p>
           </div>
           <!--games-->
           <img src="../../../assets/projects/stp.jpg"
                alt="stp"
-               [routerLink]="['/project/stp']"></div>
+               [routerLink]="['/stp']"></div>
       </div>
 
-      <div class="img-holder--inner" *ngIf="filter === 'webDesign' || filter === 'any' || filter === 'uiux'">    <!--web design-->
-        <div class="img-holder--inner-inner odd" >
-          <div class="img-hover" [routerLink]="['/project/booky']">
-            <p>{{content['booky']}}</p>
-          </div>
-          <img src="../../../assets/projects/booky.jpg"
-               alt="booky"
-               [routerLink]="['/project/booky']"></div>
-      </div>
+<!--      <div class="img-holder&#45;&#45;inner" *ngIf="filter === 'webDesign' || filter === 'any' || filter === 'uiux'">    &lt;!&ndash;web design&ndash;&gt;-->
+<!--        <div class="img-holder&#45;&#45;inner-inner odd" >-->
+<!--          <div class="img-hover" [routerLink]="['/booky']">-->
+<!--            <p>{{content['booky']}}</p>-->
+<!--          </div>-->
+<!--          <img src="../../../assets/projects/booky.jpg"-->
+<!--               alt="booky"-->
+<!--               [routerLink]="['/project/booky']"></div>-->
+<!--      </div>-->
 
 
       <div class="img-holder--inner" *ngIf="filter === 'concept' || filter === 'any'|| filter === 'uiux'">  <!--conpetc-->
         <div class="img-holder--inner-inner " >
-          <div class="img-hover" [routerLink]="['/project/gajol']">
+          <div class="img-hover" [routerLink]="['/gajol']">
             <p>{{content['gajol']}}</p>
           </div>
           <img src="../../../assets/projects/gajol.jpg"
                alt="gajol"
-               [routerLink]="['/project/gajol']"></div>
+               [routerLink]="['/gajol']"></div>
       </div>
 
       <div class="img-holder--inner" *ngIf="filter === 'games' || filter === 'any'">   <!--games-->
         <div class="img-holder--inner-inner odd">
-          <div class="img-hover" [routerLink]="['/project/valentines']">
+          <div class="img-hover" [routerLink]="['/valentines']">
             <p>{{content['valentines']}}</p>
           </div>
           <img src="../../../assets/projects/valentines.jpg"
                alt="valentines"
-               [routerLink]="['/project/valentines']"></div>
+               [routerLink]="['/valentines']"></div>
       </div>
 
       <div class="img-holder--inner" *ngIf="filter === 'concept' || filter === 'any'">
         <div class="img-holder--inner-inner odd second">
           <!--concept-->
-          <div class="img-hover" [routerLink]="['/project/arla']">
+          <div class="img-hover" [routerLink]="['/arla']">
             <p>{{content['arla']}}</p>
           </div>
           <img src="../../../assets/projects/arla.jpg"
                alt="arla"
-               [routerLink]="['/project/arla']"></div>
+               [routerLink]="['/arla']"></div>
       </div>
 
 
       <div class="img-holder--inner" *ngIf="filter === 'concept' || filter === 'any' || filter === 'uiux'">    <!--concept-->
         <div class="img-holder--inner-inner ">
-          <div class="img-hover" [routerLink]="['/project/edc']">
+          <div class="img-hover" [routerLink]="['/edc']">
             <p>{{content['edc']}}</p>
           </div>
           <img src="../../../assets/projects/edc.jpg"
                alt="edc"
-               [routerLink]="['/project/edc']"></div>
+               [routerLink]="['/edc']"></div>
       </div>
 
       <div class="img-holder--inner" *ngIf="filter === 'print' || filter === 'any'"> <!--print-->
@@ -95,15 +95,15 @@
                [routerLink]="['/project/poster-challenge']"></div>
       </div>
 
-      <div class="img-holder--inner" *ngIf="filter === 'concept' || filter === 'any' || filter === 'uiux'">   <!--conpect-->
-        <div class="img-holder--inner-inner ">
-          <div class="img-hover" [routerLink]="['/project/spotify']">
-            <p>{{content['spotify']}}</p>
-          </div>
-          <img src="../../../assets/projects/spotify.jpg"
-               alt="spotify"
-               [routerLink]="['/project/spotify']"></div>
-      </div>
+<!--      <div class="img-holder&#45;&#45;inner" *ngIf="filter === 'concept' || filter === 'any' || filter === 'uiux'">   &lt;!&ndash;conpect&ndash;&gt;-->
+<!--        <div class="img-holder&#45;&#45;inner-inner ">-->
+<!--          <div class="img-hover" [routerLink]="['/project/spotify']">-->
+<!--            <p>{{content['spotify']}}</p>-->
+<!--          </div>-->
+<!--          <img src="../../../assets/projects/spotify.jpg"-->
+<!--               alt="spotify"-->
+<!--               [routerLink]="['/project/spotify']"></div>-->
+<!--      </div>-->
 
       <div class="img-holder--inner" *ngIf="filter === 'any' || filter === 'uiux'">   <!--ux-->
         <div class="img-holder--inner-inner odd">

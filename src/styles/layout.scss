@@ -1,0 +1,77 @@
+@import "../styles/breakpoints";
+$animate: opacity 0.3s linear, height 0.3s ease-in;
+.project-page-loader{
+  max-width: 732px;
+  width: 100%;
+  margin-top: 40px;
+}
+.project-page{
+  .arrow{
+    position: absolute;
+    bottom: 76px;
+    cursor: pointer;
+    max-width: 25px;
+    transform: rotate(90deg);
+    right: 85px;
+
+  }
+  //border: 1px solid red;
+  margin-top: 40px;
+  //margin-left: 260px;
+  max-width: 732px;
+  width: 100%;
+  .p-image{
+    max-width: 100%;
+    margin-top: 28px;
+  }
+  img{
+    &.shadow{
+      box-shadow: 0 3px 30px rgba(0, 0, 0, 0.09);
+    }
+
+    &.center{
+      display: block;
+      margin: 28px auto 0 auto;
+    }
+    &.desktop{
+      display: none;
+    }
+  }
+  .phone-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@include breakpoint(desktop) {
+  .project-page-loader{
+    margin-left: 292px;
+    width: 732px;
+  }
+  .project-page{
+    margin-left: 292px;
+    width: 732px;
+    .line{
+      height: calc(100% + 30px);
+      width: 1px;
+      //background: deeppink;
+      position: absolute;
+      top: -30px;
+      background: #ededed;
+    }
+
+    //border: 1px solid red;
+    .phone-image{
+      flex-direction: row;
+      justify-content: center;
+    }
+    img{
+      &.mobile{
+        display: none;
+      }
+      &.desktop{
+        display: block;
+      }
+    }
+  }
+}

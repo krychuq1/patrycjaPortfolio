@@ -1,9 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/loader/loader";
+@import "styles/typography";
+@import "styles/layout";
+@import "styles/breakpoints";
 body{
  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  margin: 25px 25px 0 25px;
+  margin: 25px 20px 0 20px;
 }
 // remove border blue line from focus element
 *:focus {outline:none}
@@ -18,30 +21,3 @@ p{
 }
 
 
-/*********************
-BREAKPOINTS
-*********************/
-
-@mixin breakpoint($point) {
-  @if $point == desktop {
-    @media (min-width: 64em) { @content ; }
-  }
-  @else if $point == laptop {
-    @media (min-width: 64em) { @content ; }
-  }
-  @else if $point == tablet {
-    @media (min-width: 50em) { @content ; }
-  }
-  @else if $point == phablet {
-    @media (min-width: 37.5em)  { @content ; }
-  }
-  @else if $point == mobileonly {
-    @media (max-width: 37.5em)  { @content ; }
-
-  }
-}
-@include breakpoint(desktop) {
-  body{
-    margin-top: 0;
-  }
-}

@@ -1,0 +1,17 @@
+@import "../../../styles";
+
+.learning{
+  .logo{
+    margin-left: 57.5px;
+    width: 210px;
+  }
+
+}
+@include breakpoint(desktop) {
+  .learning{
+    .logo{
+      width: auto;
+    }
+
+  }
+}

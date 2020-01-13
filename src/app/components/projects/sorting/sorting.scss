@@ -28,7 +28,7 @@
     width: 100%;
     &.show{
       opacity: 1;
-      transition: opacity 0.3s linear, height 0.3s ease-in;
+      transition: opacity 1s linear, height 1s ease-in;
       height: 80px;
       //display: block;
     }
@@ -53,7 +53,7 @@
 @include breakpoint(desktop) {
   .sorting{
     flex-direction: column;
-    padding-top: 15px;
+    padding-top: 41px;
     .sort{
       &:hover{
         font-weight: 500;
@@ -62,6 +62,7 @@
       span{
       display: block;
       float: none;
+        font-size: 14px;
         &:hover{
           font-weight: 500;
         }

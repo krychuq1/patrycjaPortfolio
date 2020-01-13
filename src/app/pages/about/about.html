@@ -1,19 +1,20 @@
-<div class="about" *ngIf="!imgLoading && ! contentLoading">
+<div class="about" *ngIf="!imgLoading">
   <div class="languages">
-    <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>
-    <span class="line">|</span>
-    <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>
+<!--    <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>-->
+<!--    <span class="line">|</span>-->
+<!--    <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>-->
   </div>
-  <img src="assets/about/me.jpg">
-  <div class="about-text">
-    <span>
-          {{content['pataInfo']}}
 
+  <img src="assets/about/me.jpg" [ngClass]="animate ? 'show' : ''">
+  <div class="about-text" [ngClass]="animate ? 'show' : ''">
+    <span>
+      {{'about.pataInfo' | translate}}
     </span>
   </div>
+
 </div>
 
-<div class="sk-three-bounce subPage" *ngIf="imgLoading || contentLoading">
+<div class="sk-three-bounce subPage" *ngIf="imgLoading">
   <div>
     <div class="sk-child sk-bounce1"></div>
     <div class="sk-child sk-bounce2"></div>

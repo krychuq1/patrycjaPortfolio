@@ -102,7 +102,7 @@
     //padding-bottom: 150px;
     .images{
       cursor: pointer;
-      margin-top: 70px;
+      margin-top: 42px;
       img{
         height: 30px;
         margin-right: 10px;
@@ -124,17 +124,34 @@
   .header-holder{
     position: fixed;
     //border: 1px solid red;
-    max-width: 255px;
+    max-width: 223px;
+    //border: 1px solid red;
+    .header-text{
+      p{
+        font-size: 14px;
+        margin-top: 29px;
+      }
+    }
+  }
+  .images{
+    position: absolute !important;
+    margin-top: 382px !important;
   }
   .sorting{
     display: block;
+    opacity: 0;
+    transition: opacity 0.3s linear, height 0.3s ease-in;
+    &.show{
+      opacity: 1;
+      transition: opacity 0.3s linear, height 0.3s ease-in;
+    }
   }
   .header{
     //border: 1px solid blue;
     //position: fixed;
     max-width: 255px;
     min-width: 255px;
-    margin-top: 100px;
+    margin-top: 60px;
     app-sorting{
       display: block;
     }
@@ -145,7 +162,7 @@
     }
     .logo{
       img{
-        max-height: 70px;
+        max-height: 77px;
       }
     }
   }
@@ -170,6 +187,7 @@
       text-align: left;
       margin-top: 80px;
       p{
+        font-size: 14px;
         &:hover{
           font-weight: 500;
         }

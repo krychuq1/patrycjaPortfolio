@@ -5,7 +5,7 @@
     <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>
   </div>
 
-  <div class="contact-info">
+  <div class="contact-info" [ngClass]="animate ? 'show' : ''">
     <p>{{content['contactInfo']}}</p>
     <div class="details">
       <p class="bold">{{content['contactPhone']}}</p>

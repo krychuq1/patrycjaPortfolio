@@ -1,0 +1,14 @@
+@import "../../../styles";
+.edc{
+  .logo{
+
+  }
+}
+@include breakpoint(desktop) {
+  .edc{
+    .logo{
+      margin-left: 34px;
+    }
+  }
+
+}

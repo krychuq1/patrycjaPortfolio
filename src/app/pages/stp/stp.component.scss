@@ -1,0 +1,86 @@
+@import "../../../styles";
+
+$pink: #EE00EB;
+.arrow{
+  bottom: 36px !important;
+}
+.stp{
+  background: transparent linear-gradient(348deg, #000022 0%, #0D0D31 33%, #1E1E5D 100%) 0% 0% no-repeat padding-box;
+  //width: calc(100% + 40px);
+  margin-left: -20px;
+  padding: 48px 20px 100px 20px;
+  h3{
+    color: white;
+  }
+  h5{
+    color: white;
+  }
+  p{
+    color: white;
+  }
+  .background{
+    background: #EE00EB;
+  }
+  .color{
+    color: $pink;
+    font-weight: 700;
+  }
+  a{
+    color: $pink;
+    text-decoration: none;
+  }
+  .patrick{
+    //margin-bottom: 34px;
+  }
+  .section{
+    margin-top: 90px;
+    &.first{
+      margin-top: 68px;
+    }
+  }
+}
+@include breakpoint(desktop) {
+  p{
+    margin-left: 40px;
+    font-size: 16px;
+    &.footer{
+      margin: 28px 0 21px 40px;
+    }
+  }
+  .stp{
+    padding-left: 38px;
+    padding-top: 132px;
+    padding-bottom: 504px;
+    margin-top: -60px;
+    max-width: calc(100vw - 367px);
+    margin-left: 292px;
+    .mobile{
+      display: none;
+    }
+    .patrick{
+      margin-left: 88px;
+      margin-bottom: 0px;
+      width: 365px;
+    }
+    .stp-holder{
+      max-width: 650px;
+    }
+    .cellphone{
+      width: 409px;
+    }
+    .section{
+      display: flex;
+      margin-top: 120px;
+      position: relative;
+      .cellphone2{
+        position: absolute;
+        top: 483px;
+        right: 201px;      }
+      div{
+        margin-right: 71px;
+        min-width: 190px;
+        margin-top: 98px;
+      }
+    }
+  }
+}

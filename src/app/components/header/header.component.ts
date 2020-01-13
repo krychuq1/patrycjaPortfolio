@@ -1,6 +1,5 @@
 import {Component, HostListener, Inject, Input} from '@angular/core';
 import {LanguageService} from '../../services/language.service';
-import {ContentService} from '../../services/content.service';
 import {Router} from '@angular/router';
 import {DOCUMENT} from '@angular/common';
 import {HeaderService} from '../../services/header.service';
@@ -14,9 +13,7 @@ export class HeaderComponent {
   navBurger: boolean;
   isMobile: boolean;
   local: any;
-  @Input() content;
-  constructor(private languageService: LanguageService,
-              private contentService: ContentService, public router: Router,
+  constructor(private languageService: LanguageService, public router: Router,
   @Inject(DOCUMENT) private document: Document, private headerService: HeaderService) {
     this.navBurger = false;
     this._checkDevice();

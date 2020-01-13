@@ -1,7 +1,7 @@
 <div class="header-holder">
   <div class="header">
     <div class="logo" routerLink="/" (click)="goHome()">
-      <img src="../../../assets/header/logo.png">
+      <img src="../../../assets/header/logo.svg">
     </div>
     <div class="language-burger">
       <div class="languages">
@@ -18,12 +18,12 @@
       </button>
     </div>
   </div>
-  <div class="header-text" *ngIf="content && router.url === '/' || !isMobile">
-    <p>{{content['title']}}</p>
-    <!--<p>{{content['subTitle']}}</p>-->
-
+  <div class="header-text" *ngIf="router.url === '/' || !isMobile">
+    <p>{{'header.title' | translate}}
+       <br *ngIf="!isMobile">
+      <span>{{'header.title1' | translate}}</span></p>
   </div>
-  <div class="open-nav" [ngClass]="navBurger ? 'show' : ''" *ngIf="content">
+  <div class="open-nav" [ngClass]="navBurger ? 'show' : ''">
     <button class="hamburger hamburger--collapse"
             (click)="openBurger()" [ngClass]="navBurger ? 'is-active' : ''"
             type="button">
@@ -33,10 +33,10 @@
     </button>
     <div class="open-nav--holder">
       <div class="nav-text" >
-        <p (click)="openBurger()" routerLink="/">{{content['mainPage']}}</p>
-        <p routerLink="about" (click)="openBurger()">{{content['about']}}</p>
-        <p (click)="openBurger()" routerLink="contact" >{{content['contact']}}</p>
-        <app-sorting class="sorting" *ngIf="router.url === '/'"></app-sorting>
+        <p (click)="openBurger()" routerLink="/">{{'header.mainPage' | translate}}</p>
+        <p routerLink="about" (click)="openBurger()">{{'header.about' | translate}}</p>
+        <p (click)="openBurger()" routerLink="contact" >{{'header.contact' | translate}}</p>
+        <app-sorting class="sorting" [ngClass]="router.url === '/' ? 'show' : ''"></app-sorting>
       </div>
       <div class="images">
         <img src="assets/header/fb.png" alt="facebook" (click)="openBurger();

@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {LanguageService} from '../../services/language.service';
 import {SortingService} from '../../services/sorting.service';
 import {ContentService} from '../../services/content.service';
@@ -7,9 +7,10 @@ import {ContentService} from '../../services/content.service';
   templateUrl: './projects.html',
   styleUrls: ['./projects.scss']
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit{
   filter: string;
   local: any;
+  animate = false;
 
   @Input() content;
 
@@ -28,5 +29,11 @@ export class ProjectsComponent {
   public setLanguage(lan: string) {
     this.languageService.setLanguage(lan);
     // this.getContent();
+  }
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.animate = true;
+    }, 300);
   }
 }
