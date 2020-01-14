@@ -1,4 +1,4 @@
-<div class="project-page edc" *ngIf="!loading">
+<div class="project-page edc" *ngIf="!loading" [ngClass]="animate ? 'show' : ''">
   <div class="line"></div>
   <img src="assets/projects/edc/logo.png" class="logo">
   <h3>{{'projects.edc.h1' | translate}}</h3>

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class GajolComponent implements OnInit {
   numberOfImage = 0;
   loading = true;
+  animate = false;
   constructor() { }
 
   ngOnInit() {
@@ -18,8 +19,9 @@ export class GajolComponent implements OnInit {
 
     if (this.numberOfImage === 10) {
       this.loading = false;
-      console.log('here ', this.loading);
-
+      setTimeout(() => {
+        this.animate = true;
+      }, 100);
     }
   }
   scrollToTop(): void{

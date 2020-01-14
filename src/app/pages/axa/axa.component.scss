@@ -1,0 +1,10 @@
+@import "../../../styles";
+
+
+@include breakpoint(desktop) {
+  .axa{
+    .logo{
+      margin-left: 42px;
+    }
+  }
+}

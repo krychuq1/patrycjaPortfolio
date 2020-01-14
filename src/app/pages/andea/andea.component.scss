@@ -1,0 +1,9 @@
+@import "../../../styles";
+
+@include breakpoint(desktop) {
+  .andea{
+    .logo{
+      margin-left: 41.5px;
+    }
+  }
+}

@@ -25,6 +25,8 @@ import { EdcComponent } from './pages/edc/edc.component';
 import { StpComponent } from './pages/stp/stp.component';
 import { ValentinesComponent } from './pages/valentines/valentines.component';
 import { ImareadComponent } from './pages/imaread/imaread.component';
+import { AxaComponent } from './pages/axa/axa.component';
+import { AndeaComponent } from './pages/andea/andea.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +43,9 @@ import { ImareadComponent } from './pages/imaread/imaread.component';
     EdcComponent,
     StpComponent,
     ValentinesComponent,
-    ImareadComponent
+    ImareadComponent,
+    AxaComponent,
+    AndeaComponent
   ],
   imports: [
     BrowserModule,

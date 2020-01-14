@@ -8,9 +8,47 @@
     "contact": "contact"
   },
   "projects": {
-    "arla": "Arla | Koncept development",
-    "book": "Book cover | Print",
-    "booky": "EDC | Concept development",
+    "hover": {
+      "stp": {
+        "h1": "More beer, less balance. Only on st. Patrick’s Day!",
+        "p": "Drink a beer | Mobile game"
+      },
+      "learning": {
+        "h1": "How can we attract educators to use and invest in their Peer Practice method?",
+        "p": "&Learning | Concept development, User experience, User interface"
+      },
+      "gajol": {
+        "h1": "How can we regain the leadership in Danish liquorice candy market?",
+        "p": "Ga-Jol | Concept development, User interface"
+      },
+      "valentines": {
+        "h1": "Be my valentine? Give Boo some love on that day!",
+        "p": "Give Boo some love | Online game"
+      },
+      "arla": {
+        "h1": "How to increase Arla’s visibility in the health debates?",
+        "p": "Arla | Concept development"
+      },
+      "edc": {
+        "h1": "How can we strengthen EDC’s leadership in the real estate market in Denmark?",
+        "p": "EDC | Concept development, User experience, User interface"
+      },
+      "poster": {
+        "h1": "Counting down until the summer comes…",
+        "p": "Summer Poster Challange | Print"
+      },
+      "imaread": {
+        "h1": "How can Ima Read reader user interface be optimized in order to improve user experience?",
+        "p": "Ima Read | User experience, User Interface"
+      },
+      "logos": {
+        "h1": "Logofolio."
+      },
+      "otis": {
+        "h1": "How can this banana live such an extreme life?",
+        "p": "Extreme life of Otis. The banana. | Print"
+      }
+    },
     "gajol": {
       "h1": "the client",
       "h1Des": "The original Ga-Jol liquorice pastil has existed since 1933 and is Denmark’s favorite liquorice paste. The Danes therefore eat about 600 million of the small popular pastilles a year corresponding to 25 million Ga-Jol boxes.",
@@ -145,7 +183,50 @@
       "h8Des2": "It is an easy to use tool for developers and designers. All of the code for different elements should be accessible inside the library, as well as any other materials, such as color swatches and fonts. What is more, it explains how to use specific UI components.",
       "h8Des3": " The perfect set of elements can be mixed in various ways to make a functional and pleasant user interface. Each element is already tested within its usability and design and it is ready to use. Library is a tool for developers, designers and anyone in the team developing Ima Read. It is well documented; library can speed up the process of design and development and increase efficiency in the workflow of organization.",
       "sh2": "The project was developed by a group of three people, including Ausrine Kriucokaite and Eidvile Bagdonaite. I have been responsible for UI/UX and concept development."
-
+    },
+    "axa": {
+      "h1": "THE CLIENT",
+      "h1Des": "AXA is a French multinational insurance firm headquartered in the 8th arrondissement of Paris that engages in global insurance, investment management, and other financial services. The Axa Group operates primarily in Western Europe, North America, the Asia Pacific region, and the Middle East, with a presence also in Africa. Axa is a conglomerate of independently run businesses, operated according to the laws and regulations of many different countries.",
+      "h2": "Goal",
+      "sh1": "Develop a digital solution where Axa’s employees would be able to travel to work by carpooling.",
+      "h3": "the product",
+      "h3Des": "The product is an online application where users can drive with each other to work on the app they have their profiles set as drivers or passengers, they can see their upcoming rides, talk with each other, see statistics and explore new meeting points. The application has two versions, for end users and admins.",
+      "h4": "ui patterns",
+      "h4Des": "Application UI design is based on AXA’s library design patterns, in order for it to be cohesive with the rest of the products that users are familiar with.",
+      "h5": "process",
+      "h5Des": "First we research solutions that are similar and we gathered some inspiration from benchmark. Then we sketched out application architecture, so we would know what kind of screens we need, not to miss out on important interactions. First step after was to prepare wireframes and low fidelity mockups. Based on that we present it to a client, receive feedback and move on with UI design process.",
+      "h6": "the application",
+      "sh2": "Chosen screens from onboarding",
+      "h6Des": "When users are log in for the first time they need to set up their profile, choose their role, passenger or driver, accept terms and conditions, if they are drivers they need to put up car details and information about valid driving licence and OC insurance.",
+      "h7": "Driver’s dashboard",
+      "h7Des": "On drivers dashboard users can see the most important information on the top of the application, which is upcoming ride and your status. Just below there are information about schedule, conversations, statistics, meeting points and lates activity.",
+      "h8": "Schedule",
+      "h8Des": "In calendar users are able to accept, reject rides and switch driver if they cannot be one at a time. There is also an option to confirm whole ween and month if users are sure that they are going to use carpooling services.",
+      "h9": "Chat, edit profile, statistics",
+      "h9Des": "Users can talk with each other, when they are in the same meeting point in case there is some change or they can’t find each other. Users are also able to change their status from driver to passenger and other way around. There is also a ranking and statistics available on the app. Each user is able to have up to five meeting points and also change them if they would prefer to be picked up from different place.",
+      "h10": "Rejecting rides",
+      "h10Des": "Passengers and drivers can only reject ride 24h before its date in order for the system to find another driver. Passengers can also choose one way ride if they prefer to.",
+      "h11": "admin dashboard",
+      "h11Des": "In order for application to work there is a need of admin panel where users, meeting points, schedules and statistics are managed.",
+      "sh3": "The project was developed when i was working for Blue Paprica. I have been responsible for information architecture, prototyping, UX and UI."
+    },
+    "andea": {
+      "h1": "THE CLIENT",
+      "h1Des": "Andea specializes in delivering MES services and solutions; from conducting technical assessments and implementing strategic manufacturing systems to managing global MES rollouts.Experts in the fields of production and logistic, quality management and production data analysis. Successfully delivered tens of global manufacturing system implementations in various industries including; Automotive, Aerospace & Defence, Packaging, Medical Devices, FMCG and Industrial Machinery & Equipment.",
+      "h2": "GOAL",
+      "sh1": "Develop a digital product that will be flexible to configure in various manufacturing industries, so that different type of users will be able to use it.",
+      "h3": "the product",
+      "h3Des": "The product is an online application where users working in manufacturing companies such as managers, analysts, people on production, quality controllers, logisticians and factory directors can monitor and interact with various features that their work requires.,",
+      "h4": "process",
+      "h4Des": "First we did two days of discovery workshops where we got to know industries that the product might be sold to and then we identified different types of users that will use the application. We ended up over then types of users and created user flows for them.",
+      "des1": "Chosen user flows",
+      "des2": "Navigation",
+      "desDes": "After creating user flows we identified common part of application, its navigation and we sketched out few propositions.",
+      "desDes1": "We wireframes first ideas in order to fin out what information should each screen contain.",
+      "desDes2": "Each iteration is a little bit more detailed as we go.",
+      "h5": "Final product",
+      "h5Des": "We designed a lot od screens for different type of users, below you can see some of them. In order for the application to work and look cohesive we created extended web guide that has all the elements and patterns that can be reusable when creating more features and user interface elements.",
+      "sh2": "The project was developed when i was working for Blue Paprica. I have been responsible for information architecture, prototyping, UX and UI."
     }
   },
   "about": {

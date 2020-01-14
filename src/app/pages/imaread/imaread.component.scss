@@ -1,0 +1,8 @@
+@import "../../../styles";
+@include breakpoint(desktop) {
+  .imaread{
+    .logo{
+      margin-left: 53.5px;
+    }
+  }
+}

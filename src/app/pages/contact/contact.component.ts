@@ -32,7 +32,7 @@ export class ContactComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    setTimeout(()=>{
+    setTimeout(() => {
       this.animate = true;
     }, 100);
   }

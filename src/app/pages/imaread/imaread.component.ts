@@ -6,9 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./imaread.component.scss']
 })
 export class ImareadComponent implements OnInit {
+  animate = false;
+  numberOfImage = 0;
+  loading = true;
 
   constructor() { }
-
+  imgLoaded() {
+    this.numberOfImage ++;
+    if (this.numberOfImage === 14) {
+      this.loading = false;
+      setTimeout(() => {
+        this.animate = true;
+      }, 100);
+    }
+  }
   ngOnInit() {
   }
   scrollToTop(): void{

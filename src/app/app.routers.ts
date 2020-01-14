@@ -10,6 +10,8 @@ import {EdcComponent} from './pages/edc/edc.component';
 import {StpComponent} from './pages/stp/stp.component';
 import {ValentinesComponent} from './pages/valentines/valentines.component';
 import {ImareadComponent} from './pages/imaread/imaread.component';
+import {AxaComponent} from './pages/axa/axa.component';
+import {AndeaComponent} from './pages/andea/andea.component';
 
 export const routes: Route[] = [
   { path: 'about', component: AboutComponent},
@@ -19,6 +21,8 @@ export const routes: Route[] = [
   { path: 'arla', component: ArlaComponent},
   { path: 'edc', component: EdcComponent},
   { path: 'stp', component: StpComponent},
+  { path: 'axa', component: AxaComponent},
+  { path: 'andea', component: AndeaComponent},
   { path: 'valentines', component: ValentinesComponent},
   { path: 'imaread', component: ImareadComponent},
   { path: 'project/:name', component: ProjectSingleComponent},

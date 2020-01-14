@@ -1,4 +1,4 @@
-<div class="project-page" *ngIf="!loading">
+<div class="project-page" *ngIf="!loading" [ngClass]="animate ? 'show' : ''">
   <div class="line"></div>
   <img src="assets/projects/gajol/logo.svg" class="logo">
   <h3>{{'projects.gajol.h1' | translate}}</h3>

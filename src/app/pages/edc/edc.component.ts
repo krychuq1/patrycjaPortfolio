@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class EdcComponent implements OnInit {
   numberOfImage = 0;
   loading = true;
+  animate = false;
   constructor() { }
 
   ngOnInit() {
@@ -16,7 +17,9 @@ export class EdcComponent implements OnInit {
     this.numberOfImage ++;
     if (this.numberOfImage === 23) {
       this.loading = false;
-
+      setTimeout(() => {
+        this.animate = true;
+      }, 100);
     }
   }
   scrollToTop(): void{

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class StpComponent implements OnInit {
   numberOfImage = 0;
   loading = true;
+  animate = false;
   constructor() { }
 
   ngOnInit() {
@@ -16,6 +17,9 @@ export class StpComponent implements OnInit {
     this.numberOfImage ++;
     if (this.numberOfImage === 5) {
       this.loading = false;
+      setTimeout(() => {
+        this.animate = true;
+      }, 100);
     }
   }
   scrollToTop(): void{

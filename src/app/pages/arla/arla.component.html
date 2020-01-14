@@ -1,4 +1,4 @@
-<div class="project-page arla" *ngIf="!loading">
+<div class="project-page arla" *ngIf="!loading" [ngClass]="animate ? 'show' : ''">
   <div class="line"></div>
   <img src="assets/projects/arla/logo.svg" class="logo">
   <h3>{{'projects.arla.h1' | translate}}</h3>

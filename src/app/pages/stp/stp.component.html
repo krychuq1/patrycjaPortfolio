@@ -1,4 +1,4 @@
-<div class="project-page stp" *ngIf="!loading">
+<div class="project-page stp" *ngIf="!loading"  [ngClass]="animate ? 'show' : ''">
   <div class="stp-holder">
     <h3>{{'projects.stp.h1' | translate}} <br class="mobile"><span class="background">{{'projects.stp.h1P' | translate}}</span></h3>
     <p>{{'projects.stp.h1Des' | translate}}</p>

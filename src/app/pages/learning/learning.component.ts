@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class LearningComponent implements OnInit {
   numberOfImage = 0;
   loading = true;
+  animate = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -16,8 +18,10 @@ export class LearningComponent implements OnInit {
     this.numberOfImage ++;
     if (this.numberOfImage === 16) {
       this.loading = false;
+      setTimeout(() => {
+        this.animate = true;
+      }, 100);
     }
-    console.log(this.numberOfImage);
   }
   scrollToTop(): void{
     window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });

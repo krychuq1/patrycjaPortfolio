@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ArlaComponent implements OnInit {
   numberOfImage = 0;
   loading = true;
+  animate = false;
   constructor() { }
 
   ngOnInit() {
@@ -16,9 +17,12 @@ export class ArlaComponent implements OnInit {
     this.numberOfImage ++;
     if (this.numberOfImage === 10) {
       this.loading = false;
+      setTimeout(() => {
+        this.animate = true;
+      }, 100);
     }
   }
-  scrollToTop(): void{
+  scrollToTop(): void {
     window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
   }
 }

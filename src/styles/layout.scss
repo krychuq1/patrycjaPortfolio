@@ -6,6 +6,11 @@ $animate: opacity 0.3s linear, height 0.3s ease-in;
   margin-top: 40px;
 }
 .project-page{
+  opacity: 0;
+  &.show{
+    opacity: 1;
+    transition: $animate;
+  }
   .arrow{
     position: absolute;
     bottom: 76px;
