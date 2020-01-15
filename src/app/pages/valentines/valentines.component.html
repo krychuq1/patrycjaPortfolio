@@ -7,8 +7,10 @@
     <span class="bold"><a href="https://stpatrick.sevenamstudio.com/?play=" target="_blank">{{'projects.valentines.h1Bold' | translate}}</a></span>
   </p>
   <img src="assets/projects/valentines/1image.png" class="p-image p1">
+  <div class="arrow-holder">
+    <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
+  </div>
   <p class="footer">{{'projects.gajol.footer' | translate}}</p>
-  <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
 
 </div>
 <div class="project-page-loader sk-three-bounce subPage" *ngIf="loading">

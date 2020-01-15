@@ -53,8 +53,9 @@
 @include breakpoint(desktop) {
   .sorting{
     flex-direction: column;
-    padding-top: 41px;
+    padding-top: 33px;
     .sort{
+
       &:hover{
         font-weight: 500;
       }

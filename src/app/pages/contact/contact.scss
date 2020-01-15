@@ -15,7 +15,7 @@
     text-align: left;
     opacity: 0;
     font-size: 14px;
-    margin-top: 23px;
+    margin-top: 22px;
     &.show{
       opacity: 1;
       transition: $animate;
@@ -28,6 +28,9 @@
   .contact{
     margin-left: 260px;
     padding-top: 145px;
+    .contact-info{
+      margin-top: -11px;
+    }
     //position: relative;
     .languages{
       position: absolute;

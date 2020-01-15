@@ -1,7 +1,7 @@
 {
   "hello": "kurwa here",
   "header": {
-    "title": "UX/UI designer concept",
+    "title": "UX/UI designer, concept",
     "title1": "developer by profession.",
     "mainPage": "home",
     "about": "about",
@@ -47,6 +47,9 @@
       "otis": {
         "h1": "How can this banana live such an extreme life?",
         "p": "Extreme life of Otis. The banana. | Print"
+      },
+      "book": {
+        "h1": "Book cover."
       }
     },
     "gajol": {
@@ -166,9 +169,9 @@
       "h2": "target audience",
       "h2Des": "The initial idea is targeted towards various customer segments; however, in order to have more focused product development in the Alpha and Beta stages, the target audience was narrowed down to tertiary university student segment in Denmark. Within this segment, Ima Read targets university students from social science and humanity study lines. The reason behind this is that this group has the significant amount of reading material, which requires focused and intermittent reading. In the interview conducted with a target audience, students have stated to have more than 50% of their study curriculum digitized. In addition to that, full-time student is supposed to read 15 hours a week.",
       "h3": "the market",
-      "h3Des": "The initial research suggests that generally students are wasting many weekly hours on inefficient reading: “just in Denmark, university students are collectively wasting 878.500 hours weekly on inefficient studying because of lacking technique”. In addition to that, students state that they do not know how they should study or what technique could help them improve. Some other mentioned issues were that files take a lot of memory in the computer. Also that the note taking technique should be improved and the navigation was regarded as fuzzy with too many tabs when reading in the browser. Additionally, students say they are not as focused as reading the physical file. While reading digital material, students get more confused and easily distracted",
+      "h3Des": "The initial research suggests that generally students are wasting many weekly hours on inefficient reading: “just in Denmark, university students are collectively wasting 878.500 hours weekly on inefficient studying because of lacking technique”. In addition to that, students state that they do not know how they should study or what technique could help them improve. Some other mentioned issues were that files take a lot of memory in the computer. Also that the note taking technique should be improved and the navigation was regarded as fuzzy with too many tabs when reading in the browser. Additionally, students say they are not as focused as reading the physical file. While reading digital material, students get more confused and easily distracted. In order to improve and provide the solution to the above mentioned issues, Ima Read aimed to design digital tool.",
       "h4": "the product",
-      "h4Des": "In order to improve and provide the solution to the above mentioned issues, Ima Read aimed to design digital tool that will help with all mentioned issues.",
+      "h4Des": "In order to improve and provide the solution to the above mentioned issues, Ima Read aimed to design digital tool.",
       "h5": "GOAL",
       "sh1": "How can Ima Read reader user interface be optimized in order to improve user experience?",
       "h6": "the product",
@@ -227,6 +230,18 @@
       "h5": "Final product",
       "h5Des": "We designed a lot od screens for different type of users, below you can see some of them. In order for the application to work and look cohesive we created extended web guide that has all the elements and patterns that can be reusable when creating more features and user interface elements.",
       "sh2": "The project was developed when i was working for Blue Paprica. I have been responsible for information architecture, prototyping, UX and UI."
+    },
+    "posterChallenge": {
+      "h1": "SUMMER CHALLENGE | POSTERS",
+      "h1Des": "Summer poster challenge was creative counting down until the summer comes. I designed one summer poster each day for a week until 21st of June."
+    },
+    "otis": {
+      "h1": "EXTREME LIFE OF OTIS. THE BANANA. | ILLUSTRATED BOOK\n",
+      "h1Des": "Extreme life of Otis\" is a little illustrated book about The Banana called Otis and his extreme adventures. It consists of four illustrations, \"The scratch\", \"Fly away\", \"Ladder\" and \"Banana rain\" plus the cover. You can follow extreme like of crazy Banana in a small book that has very minimalistic and simple design, but it shows a lot of emotions that Otis is feeling in his journey."
+    },
+    "book": {
+      "h1": "I TY MOZESZ BYC AUTOREM KSIAZKI | BOOK COVER",
+      "h1Des": "“You can be a book author as well” is an English title for a book cover that was created for one of the primary schools in Poland, where kids send their stories about specific topics and the best once were published in a book.\n\n"
     }
   },
   "about": {

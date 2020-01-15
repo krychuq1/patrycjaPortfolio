@@ -5,23 +5,23 @@
   <p>{{'projects.arla.h1Des' | translate}}</p>
   <img src="assets/projects/arla/1image.png" class="p-image p1">
   <h3>{{'projects.arla.h2' | translate}}</h3>
-  <h5>{{'projects.arla.sh1' | translate}}</h5>
+  <h5 class="h5-after-header h5-before-header">{{'projects.arla.sh1' | translate}}</h5>
   <h3>{{'projects.arla.h3' | translate}}</h3>
-  <p>{{'projects.arla.h3Des' | translate}}</p>
+  <p class="before-header">{{'projects.arla.h3Des' | translate}}</p>
   <h3>{{'projects.arla.h4' | translate}}</h3>
   <p>{{'projects.arla.h4Des' | translate}}</p>
   <img src="assets/projects/arla/2image.png" class="p-image p1">
   <h3>{{'projects.arla.h5' | translate}}</h3>
   <p>{{'projects.arla.h5Des' | translate}}</p>
-  <img src="assets/projects/arla/3image.svg" class="p-image p1 center desktop">
+  <img src="assets/projects/arla/3image.svg" class="p-image p1 desktop tab">
   <img src="assets/projects/arla/4image.svg" class="p-image p1 center mobile">
-  <h3>{{'projects.arla.h6' | translate}}</h3>
-  <p>{{'projects.arla.h6Des' | translate}}</p>
+  <h3 class="h3-after-svg">{{'projects.arla.h6' | translate}}</h3>
+  <p class="before-header">{{'projects.arla.h6Des' | translate}}</p>
   <h3>{{'projects.arla.h7' | translate}}</h3>
   <p><span class="bold">{{'projects.arla.h7Bold' | translate}}</span><br>
     {{'projects.arla.h7Des' | translate}}</p>
   <p class="footer" style="font-weight: 500">{{'projects.arla.offline' | translate}}</p>
-  <img src="assets/projects/arla/5image.png" class="p-image p1 center">
+  <img src="assets/projects/arla/5image.png" class="p-image p1 tab">
   <p class="footer" style="font-weight: 500">{{'projects.arla.online' | translate}}</p>
   <p><span class="bold">{{'projects.arla.h7Bold1' | translate}} </span>
     {{'projects.arla.h7Des1' | translate}}</p>
@@ -32,27 +32,29 @@
   <p><span class="bold">{{'projects.arla.h7Bold3' | translate}} </span>
     {{'projects.arla.h7Des3' | translate}}</p>
   <br>
-  <p><span class="bold">{{'projects.arla.h7Bold4' | translate}} </span>
+  <p class="before-header"><span class="bold">{{'projects.arla.h7Bold4' | translate}} </span>
     {{'projects.arla.h7Des4' | translate}}</p>
   <h3>{{'projects.arla.h8' | translate}}</h3>
   <p>{{'projects.arla.h8Des' | translate}}</p>
   <p class="description">{{'projects.arla.landingPage' | translate}}</p>
   <img src="assets/projects/arla/6image.png" class="p-image p1">
-  <img src="assets/projects/arla/7image.png" class="p-image p1">
-  <img src="assets/projects/arla/8image.png" class="p-image p1">
-  <p class="description">{{'projects.arla.bluePrint' | translate}}</p>
+  <img src="assets/projects/arla/7image.png" class="p-image p1 no-top">
+  <img src="assets/projects/arla/8image.png" class="p-image p1 no-top">
+  <p class="description description-after-image">{{'projects.arla.bluePrint' | translate}}</p>
 
   <img src="assets/projects/arla/9image.png" class="p-image p1">
-  <img src="assets/projects/arla/10image.png" class="p-image p1">
-  <img src="assets/projects/arla/11image.png" class="p-image p1">
-  <p class="description">{{'projects.arla.video' | translate}}</p>
+  <img src="assets/projects/arla/10image.png" class="p-image p1 no-top">
+  <img src="assets/projects/arla/11image.png" class="p-image p1 no-top">
+  <p class="description description-after-image">{{'projects.arla.video' | translate}}</p>
   <iframe width="100%" height="300" class="video"
           src="https://www.youtube.com/embed/Ql3Skg_HucU"
           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
-  <p class="no-header">{{'projects.arla.sh2Des' | translate}}</p>
+  <div class="arrow-holder">
+    <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
+  </div>
+  <p class="no-header no-header-no-image">{{'projects.arla.sh2Des' | translate}}</p>
   <p class="footer">{{'projects.gajol.footer' | translate}}</p>
-  <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
 
 </div>
 

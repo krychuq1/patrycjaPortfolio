@@ -4,6 +4,20 @@
   //text-align: center;
 }
 @include breakpoint(desktop) {
+  .bg{
+    width: calc(100vw + 421px);
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    height: 4341px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    .bg-inner{
+      width: 50%;
+      background: transparent linear-gradient(348deg, #000022 0%, #0D0D31 33%, #1E1E5D 100%) 0% 0% no-repeat padding-box;
+    }
+  }
   app-header{
     width: 255px;
   }

@@ -27,6 +27,10 @@ import { ValentinesComponent } from './pages/valentines/valentines.component';
 import { ImareadComponent } from './pages/imaread/imaread.component';
 import { AxaComponent } from './pages/axa/axa.component';
 import { AndeaComponent } from './pages/andea/andea.component';
+import { PosterChallengeComponent } from './pages/poster-challenge/poster-challenge.component';
+import { OtisComponent } from './pages/otis/otis.component';
+import { LogofolioComponent } from './pages/logofolio/logofolio.component';
+import { BookComponent } from './pages/book/book.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +49,11 @@ import { AndeaComponent } from './pages/andea/andea.component';
     ValentinesComponent,
     ImareadComponent,
     AxaComponent,
-    AndeaComponent
+    AndeaComponent,
+    PosterChallengeComponent,
+    OtisComponent,
+    LogofolioComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,

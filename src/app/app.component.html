@@ -1,3 +1,6 @@
+<div class="bg" *ngIf="router.url === '/stp'">
+  <div class="bg-inner"></div>
+</div>
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="app" *ngIf="!imgLoading && ! contentLoading">
   <div class="app-inner">
@@ -16,6 +19,7 @@
   </div>
 
 </div>
+
 <!--pre load-->
 <img src="../../../assets/projects/&learning.jpg"
      (load)="imgLoaded()"

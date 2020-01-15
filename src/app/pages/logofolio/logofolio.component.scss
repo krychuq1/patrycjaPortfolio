@@ -1,0 +1,6 @@
+@import "../../../styles";
+@include breakpoint(desktop) {
+  .logofolio{
+    margin-top: -70px;
+  }
+}

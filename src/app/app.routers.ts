@@ -12,6 +12,10 @@ import {ValentinesComponent} from './pages/valentines/valentines.component';
 import {ImareadComponent} from './pages/imaread/imaread.component';
 import {AxaComponent} from './pages/axa/axa.component';
 import {AndeaComponent} from './pages/andea/andea.component';
+import {PosterChallengeComponent} from './pages/poster-challenge/poster-challenge.component';
+import {OtisComponent} from './pages/otis/otis.component';
+import {LogofolioComponent} from './pages/logofolio/logofolio.component';
+import {BookComponent} from './pages/book/book.component';
 
 export const routes: Route[] = [
   { path: 'about', component: AboutComponent},
@@ -25,6 +29,10 @@ export const routes: Route[] = [
   { path: 'andea', component: AndeaComponent},
   { path: 'valentines', component: ValentinesComponent},
   { path: 'imaread', component: ImareadComponent},
+  { path: 'poster-challenge', component: PosterChallengeComponent},
+  { path: 'otis', component: OtisComponent},
+  { path: 'logofolio', component: LogofolioComponent},
+  {path: 'book', component: BookComponent},
   { path: 'project/:name', component: ProjectSingleComponent},
 
 ];

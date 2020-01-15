@@ -5,15 +5,15 @@
   <p>{{'projects.learning.h1Des' | translate}}</p>
   <img src="assets/projects/learning/1image.png" class="p-image p1">
   <h3>{{'projects.learning.h2' | translate}}</h3>
-  <h5>{{'projects.learning.sh1' | translate}}</h5>
+  <h5 class="h5-before-header h5-after-header">{{'projects.learning.sh1' | translate}}</h5>
   <h3>{{'projects.learning.h3' | translate}}</h3>
   <p>{{'projects.learning.h3Des' | translate}}</p>
   <img src="assets/projects/learning/2image.png" class="p-image p1">
-  <p>{{'projects.learning.h3Des1' | translate}}</p>
+  <p class="before-header">{{'projects.learning.h3Des1' | translate}}</p>
   <h3>{{'projects.learning.h4' | translate}}</h3>
   <p>{{'projects.learning.h4Des' | translate}}</p>
   <img src="assets/projects/learning/3image.png" class="p-image p1">
-  <img src="assets/projects/learning/4image.png" class="p-image p1">
+  <img src="assets/projects/learning/4image.png" class="p-image p1 no-top">
   <p>{{'projects.learning.h4Des1' | translate}}</p>
   <img src="assets/projects/learning/5image.png" class="p-image p1">
   <h3>{{'projects.learning.h5' | translate}}</h3>
@@ -38,9 +38,13 @@
     <img src="assets/projects/learning/14image.png" class="p-image p1">
     <img src="assets/projects/learning/15image.png" class="p-image p1">
   </div>
+  <div class="arrow-holder">
+    <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
+  </div>
+
+
   <p class="no-header">{{'projects.learning.sh2Des' | translate}}</p>
   <p class="footer">{{'projects.gajol.footer' | translate}}</p>
-  <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
 
 </div>
 

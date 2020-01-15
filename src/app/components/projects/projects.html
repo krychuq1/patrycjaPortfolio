@@ -91,9 +91,9 @@
                [routerLink]="['/edc']"></div>
       </div>
 
-      <div class="img-holder--inner" *ngIf="filter === 'print' || filter === 'any'"> <!--print-->
+      <div class="img-holder--inner" *ngIf="filter === 'logo' || filter === 'any'"> <!--print-->
         <div class="img-holder--inner-inner odd">
-          <div class="img-hover" [routerLink]="['/project/poster-challenge']">
+          <div class="img-hover" [routerLink]="['/poster-challenge']">
             <div>
               <h1>{{'projects.hover.poster.h1' | translate}}</h1>
               <p>{{'projects.hover.poster.p' | translate}}</p>
@@ -101,12 +101,12 @@
           </div>
           <img src="../../../assets/projects/poster-challenge.jpg"
                alt=posterChallenge
-               [routerLink]="['/project/poster-challenge']"></div>
+               [routerLink]="['/poster-challenge']"></div>
       </div>
 
       <div class="img-holder--inner" *ngIf="filter === 'any' || filter === 'uiux'">   <!--ux-->
         <div class="img-holder--inner-inner odd">
-          <div class="img-hover" [routerLink]="['/project/imread']">
+          <div class="img-hover" [routerLink]="['/imaread']">
             <div>
               <h1>{{'projects.hover.imaread.h1' | translate}}</h1>
               <p>{{'projects.hover.imaread.p' | translate}}</p>
@@ -114,27 +114,27 @@
           </div>
           <img src="../../../assets/projects/imread.jpg"
                alt="imread"
-               [routerLink]="['/project/imread']"></div>
+               [routerLink]="['/imaread']"></div>
       </div>
 
       <div class="img-holder--inner" *ngIf="filter === 'logo' || filter === 'any'"> <!--logo-->
         <div class="img-holder--inner-inner odd">
-          <div class="img-hover" [routerLink]="['/project/logos']">
+          <div class="img-hover" [routerLink]="['/logofolio']">
             <div>
               <h1>{{'projects.hover.logos.h1' | translate}}</h1>
               <p></p>
             </div>
           </div>
-          <img src="../../../assets/projects/logos.jpg"
+          <img src="../../../assets/projects/logofolio/thumb.png"
                alt="fronts"
-               [routerLink]="['/project/logos']"></div>
+               [routerLink]="['/logofolio']"></div>
       </div>
 
 
 
-      <div class="img-holder--inner" *ngIf="filter === 'print' || filter === 'any'">    <!--print-->
+      <div class="img-holder--inner" *ngIf="filter === 'logo' || filter === 'any'">    <!--logo-->
         <div class="img-holder--inner-inner odd">
-          <div class="img-hover" [routerLink]="['/project/otis']">
+          <div class="img-hover" [routerLink]="['/otis']">
             <div>
               <h1>{{'projects.hover.otis.h1' | translate}}</h1>
               <p>{{'projects.hover.otis.p' | translate}}</p>
@@ -142,8 +142,20 @@
           </div>
           <img src="../../../assets/projects/otis.jpg"
                alt="otis"
-               [routerLink]="['/project/otis']"></div>
+               [routerLink]="['/otis']"></div>
       </div>
+
+            <div class="img-holder--inner" *ngIf="filter === 'print' || filter === 'any'">   <!--print-->
+              <div class="img-holder--inner-inner ">
+                <div class="img-hover" [routerLink]="['/book']">
+                  <div>
+                    <h1>{{'projects.hover.book.h1' | translate}}</h1>
+                  </div>
+                </div>
+                <img src="../../../assets/projects/book.jpg"
+                     alt="book"
+                     [routerLink]="['/book']"></div>
+            </div>
   </div>
 
   </div>

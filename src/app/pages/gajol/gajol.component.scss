@@ -5,6 +5,15 @@
   }
   h3{
   }
+  .gajol-img{
+    .left{
+      margin-top: 0;
+    }
+    .right{
+      margin-top: 0;
+
+    }
+  }
 
 }
 @include breakpoint(desktop) {
@@ -22,9 +31,12 @@
       .left{
         width: 389px;
         margin-right: 24px;
+        margin-top: 0;
       }
       .right{
         width: 227px !important;
+        margin-top: 0;
+
       }
 
     }

@@ -1,0 +1,12 @@
+<div class="project-page" *ngIf="!loading" [ngClass]="animate ? 'show' : ''">
+  <div class="line"></div>
+  <h3>{{'projects.otis.h1' | translate}}</h3>
+  <p>{{'projects.otis.h1Des' | translate}}</p>
+  <img src="assets/projects/otis/1image.jpg" class="p-image p1">
+  <div class="arrow-holder">
+    <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
+  </div>
+  <p class="footer">{{'projects.gajol.footer' | translate}}</p>
+
+</div>
+<img src="assets/projects/otis/1image.jpg" class="p-image p1" (load)="imgLoaded()" style="display: none">

@@ -34,9 +34,11 @@
 
   </div>
 </div>
-<div class="project-page stp-footer" *ngIf="!loading">
+<div class="project-page show" *ngIf="!loading">
+  <div class="arrow-holder">
+    <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
+  </div>
   <p class="footer">{{'projects.gajol.footer' | translate}}</p>
-  <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
 
 </div>
 <div class="project-page-loader sk-three-bounce subPage" *ngIf="loading">

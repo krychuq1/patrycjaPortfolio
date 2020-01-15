@@ -20,6 +20,7 @@ $pink: #EE00EB;
   }
   .background{
     background: #EE00EB;
+    line-height: 1.5;
   }
   .color{
     color: $pink;
@@ -40,6 +41,7 @@ $pink: #EE00EB;
   }
 }
 @include breakpoint(desktop) {
+
   p{
     margin-left: 40px;
     font-size: 16px;
@@ -48,14 +50,18 @@ $pink: #EE00EB;
     }
   }
   .stp{
-    padding-left: 38px;
+    background: none;
+    //padding-left: 38px;
     padding-top: 132px;
     padding-bottom: 504px;
     margin-top: -60px;
-    max-width: calc(100vw - 367px);
+    //max-width: calc(100vw - 367px);
     margin-left: 292px;
     .mobile{
       display: none;
+    }
+    .background{
+      line-height: 1.5;
     }
     .patrick{
       margin-left: 88px;

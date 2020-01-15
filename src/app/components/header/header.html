@@ -4,11 +4,11 @@
       <img src="../../../assets/header/logo.svg">
     </div>
     <div class="language-burger">
-      <div class="languages">
-        <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>
-        <span class="line">|</span>
-        <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>
-      </div>
+<!--      <div class="languages">-->
+<!--        <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>-->
+<!--        <span class="line">|</span>-->
+<!--        <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>-->
+<!--      </div>-->
       <button class="hamburger hamburger--collapse"
               (click)="openBurger()" [ngClass]="navBurger ? 'is-active' : ''"
               type="button">

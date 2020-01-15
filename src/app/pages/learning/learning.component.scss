@@ -2,15 +2,19 @@
 
 .learning{
   .logo{
-    margin-left: 57.5px;
     width: 210px;
+
   }
 
 }
 @include breakpoint(desktop) {
   .learning{
+
     .logo{
+      margin-left: 57.5px;
+      margin-bottom: 40px;
       width: auto;
+
     }
 
   }
