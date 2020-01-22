@@ -10,17 +10,15 @@ import {SortingService} from '../../../services/sorting.service';
 })
 export class SortingComponent {
   contentUrl: string;
-  content: object;
   showSorting: boolean;
   filter: string;
   constructor(private languageService: LanguageService, private contentService: ContentService,
               private headerService: HeaderService, private sortingService: SortingService) {
     this.contentUrl = 'component/sorting/';
     this.showSorting = false;
-    this.getContent();
-    this.languageService.changeLanguage.subscribe(() => {
-      this.getContent();
-    });
+    // this.languageService.changeLanguage.subscribe(() => {
+    //   this.getContent();
+    // });
     this.headerService.homeRoute.subscribe(() => {
       this.showSorting = false;
       this.sendFilter('any');
@@ -28,13 +26,7 @@ export class SortingComponent {
   }
   @Output() filterEvent = new EventEmitter<string>();
 
-  getContent() {
-    this.contentService.getContent(this.contentUrl).then((content) => {
-      this.content = content;
-    }, err => {
-      console.error(err);
-    });
-  }
+
   sendFilter(filter: string) {
     // from projects
     this.filterEvent.emit(filter);

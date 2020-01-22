@@ -1,14 +1,23 @@
 <div class="project-holder" [ngClass]="animate ? 'show' : ''">
 
   <div class="project-holder--inner">
-<!--    <div class="languages">-->
-<!--      <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>-->
-<!--      <span class="line">|</span>-->
-<!--      <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>-->
-<!--    </div>-->
-
     <app-sorting (filter)="receiveMessage($event)" class="sorting"></app-sorting>
     <div class="img-holder">
+
+      <div class="img-holder--inner" *ngIf="filter === 'any' || filter === 'uiux'">
+        <div class="img-holder--inner-inner odd">
+          <div class="img-hover" (click)="secretProjects()">
+            <div>
+              <h1>{{'projects.hover.secret.h1' | translate}}</h1>
+              <p>{{'projects.hover.secret.p' | translate}}</p>
+            </div>
+          </div>
+          <!--games-->
+          <img src="../../../assets/projects/secretProjects.jpg"
+               alt="stp" (click)="secretProjects()"></div>
+      </div>
+
+
       <div class="img-holder--inner" *ngIf="filter === 'games' || filter === 'any' || filter === 'uiux'">
         <div class="img-holder--inner-inner odd">
           <div class="img-hover" [routerLink]="['/stp']">
@@ -160,7 +169,8 @@
 
   </div>
 
-
+<!--  <p class="no-header">{{content.sh3}}</p>-->
+  <p class="footer">{{'projects.gajol.footer' | translate}}</p>
 </div>
 
 

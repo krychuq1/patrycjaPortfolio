@@ -1,0 +1,36 @@
+@import "../../../styles";
+
+.lingvo{
+
+}
+
+@include breakpoint(desktop) {
+  .lingvo{
+    .logo{
+      margin-left: 42px;
+    }
+    .moodboard{
+      width: 87%;
+    }
+    .phone-holder{
+      height: 2000px;
+      //border: 1px solid red;
+      margin-bottom: 140px;
+
+      position: relative;
+      .special{
+        position: absolute;
+        left: 259px;
+        top: 557px;
+      }
+      .special1{
+        position: absolute;
+        left: 40px;
+        bottom: -96px;
+      }
+    }
+  }
+}
+
+
+

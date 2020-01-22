@@ -1,71 +1,103 @@
 @import "../../../styles";
-
 .contact{
-  padding-top: 70px;
-  .languages{
-    display: none;
-    p{
-      &.selected{
-        font-weight: 500;
-      }
-    }
-  }
-  .contact-info{
-    max-width: 400px;
-    text-align: left;
-    opacity: 0;
+  p{
+    max-width: 316px;
     font-size: 14px;
-    margin-top: 22px;
-    &.show{
-      opacity: 1;
-      transition: $animate;
-
+  }
+  .contact-footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    div{
+      display: flex;
+      margin-bottom: 16px;
+      p{
+        margin-left: 18px;
+      }
     }
   }
 }
 @include breakpoint(desktop) {
-
   .contact{
-    margin-left: 260px;
-    padding-top: 145px;
-    .contact-info{
-      margin-top: -11px;
+    height: calc(100vh - 125px);
+    padding-top: 29px;
+    .contact-footer {
+      margin-left: 40px;
     }
-    //position: relative;
-    .languages{
-      position: absolute;
-      display: flex;
-      cursor: pointer;
-      //border: 1px solid red;
-      align-items: center;
-      width: 43px;
-      justify-content: space-between;
-      //margin-right: 20px;
-      font-size: 0.9rem;
-      right: 0;
-      top: 0;
-      p{
-        &:hover{
-          font-weight: 500;
-        }
-      }
-    }
-    .contact-info{
-      max-width: 100%;
-      text-align: left;
-      p{
-        margin-bottom: 5px;
-
-      }
-      .details{
-        display: flex;
-        p{
-          margin: 0;
-          &:first-child{
-            margin-right: 20px;
-          }
-        }
-      }
+    p{
+      max-width: 316px;
+      font-size: 14px;
     }
   }
 }
+//
+//.contact{
+//  padding-top: 70px;
+//  .languages{
+//    display: none;
+//    p{
+//      &.selected{
+//        font-weight: 500;
+//      }
+//    }
+//  }
+//  .contact-info{
+//    max-width: 400px;
+//    text-align: left;
+//    opacity: 0;
+//    font-size: 14px;
+//    margin-top: 22px;
+//    &.show{
+//      opacity: 1;
+//      transition: $animate;
+//
+//    }
+//  }
+//}
+//@include breakpoint(desktop) {
+//
+//  .contact{
+//    margin-left: 260px;
+//    padding-top: 145px;
+//    .contact-info{
+//      margin-top: -11px;
+//    }
+//    //position: relative;
+//    .languages{
+//      position: absolute;
+//      display: flex;
+//      cursor: pointer;
+//      //border: 1px solid red;
+//      align-items: center;
+//      width: 43px;
+//      justify-content: space-between;
+//      //margin-right: 20px;
+//      font-size: 0.9rem;
+//      right: 0;
+//      top: 0;
+//      p{
+//        &:hover{
+//          font-weight: 500;
+//        }
+//      }
+//    }
+//    .contact-info{
+//      max-width: 100%;
+//      text-align: left;
+//      p{
+//        margin-bottom: 5px;
+//
+//      }
+//      .details{
+//        display: flex;
+//        p{
+//          margin: 0;
+//          &:first-child{
+//            margin-right: 20px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}

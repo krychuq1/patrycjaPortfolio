@@ -31,6 +31,12 @@ import { PosterChallengeComponent } from './pages/poster-challenge/poster-challe
 import { OtisComponent } from './pages/otis/otis.component';
 import { LogofolioComponent } from './pages/logofolio/logofolio.component';
 import { BookComponent } from './pages/book/book.component';
+import { PasswordComponent } from './components/password/password.component';
+import { SecretProcjectComponent } from './pages/secret-procject/secret-procject.component';
+import { SecretComponent } from './components/secret/secret.component';
+import { CrossComponent } from './pages/cross/cross.component';
+import { LingvoComponent } from './pages/lingvo/lingvo.component';
+import { HoperComponent } from './pages/hoper/hoper.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +59,13 @@ import { BookComponent } from './pages/book/book.component';
     PosterChallengeComponent,
     OtisComponent,
     LogofolioComponent,
-    BookComponent
+    BookComponent,
+    PasswordComponent,
+    SecretProcjectComponent,
+    SecretComponent,
+    CrossComponent,
+    LingvoComponent,
+    HoperComponent
   ],
   imports: [
     BrowserModule,

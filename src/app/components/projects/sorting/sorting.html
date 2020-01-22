@@ -1,12 +1,12 @@
-<div class="sorting" *ngIf="content">
+<div class="sorting">
   <div class="sort" (click)="changeSorting()">
-    <span>{{content['sort']}}</span>
+    <span>{{'sorting.sort' | translate}}</span>
   </div>
   <div class="menu" [ngClass]="showSorting ? 'show' : ''">
-    <span (click)="sendFilter('any')" [ngClass]="filter === 'any' ? 'selected' : ''">{{content['all']}}</span>
-    <span (click)="sendFilter('concept')" [ngClass]="filter === 'concept' ? 'selected' : ''">{{content['concept']}}</span>
-    <span (click)="sendFilter('uiux')" [ngClass]="filter === 'uiux' ? 'selected' : ''">{{content['uiux']}}</span>
-    <span (click)="sendFilter('games')" [ngClass]="filter === 'games' ? 'selected' : ''">{{content['game']}}</span>
+    <span (click)="sendFilter('any')" [ngClass]="filter === 'any' ? 'selected' : ''">{{'sorting.all' | translate}}</span>
+    <span (click)="sendFilter('concept')" [ngClass]="filter === 'concept' ? 'selected' : ''">{{'sorting.concept' | translate}}</span>
+    <span (click)="sendFilter('uiux')" [ngClass]="filter === 'uiux' ? 'selected' : ''">{{'sorting.uiux' | translate}}</span>
+    <span (click)="sendFilter('games')" [ngClass]="filter === 'games' ? 'selected' : ''"> {{'sorting.game' | translate}}</span>
 <!--    <span (click)="sendFilter('webDesign')" [ngClass]="filter === 'webDesign' ? 'selected' : ''">{{content['webDesign']}}</span>-->
     <span (click)="sendFilter('logo')" [ngClass]="filter === 'logo' ? 'selected' : ''">print & logos</span>
 <!--    <span (click)="sendFilter('print')" [ngClass]="filter === 'print' ? 'selected' : ''">{{content['print']}}</span>-->

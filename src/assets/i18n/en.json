@@ -7,8 +7,23 @@
     "about": "about",
     "contact": "contact"
   },
+  "contact": {
+    "h1": "Say hello!",
+    "h1Des": "Feel free to contact me in case you have any questions or if you want to work with me.",
+    "phone": "00 48 531 387 751",
+    "mail": "patrycja.musur@gmail.com"
+  },
+  "password": {
+    "h1": "This content is protected.",
+    "p": "To view, please enter the password.",
+    "placeHolder": "Enter password"
+  },
   "projects": {
     "hover": {
+      "secret": {
+        "h1": "Multiple UX/UI projects, that require password to enter.",
+        "p": "If you are interested to see them, drop me a line."
+      },
       "stp": {
         "h1": "More beer, less balance. Only on st. Patrick’s Day!",
         "p": "Drink a beer | Mobile game"
@@ -213,24 +228,6 @@
       "h11Des": "In order for application to work there is a need of admin panel where users, meeting points, schedules and statistics are managed.",
       "sh3": "The project was developed when i was working for Blue Paprica. I have been responsible for information architecture, prototyping, UX and UI."
     },
-    "andea": {
-      "h1": "THE CLIENT",
-      "h1Des": "Andea specializes in delivering MES services and solutions; from conducting technical assessments and implementing strategic manufacturing systems to managing global MES rollouts.Experts in the fields of production and logistic, quality management and production data analysis. Successfully delivered tens of global manufacturing system implementations in various industries including; Automotive, Aerospace & Defence, Packaging, Medical Devices, FMCG and Industrial Machinery & Equipment.",
-      "h2": "GOAL",
-      "sh1": "Develop a digital product that will be flexible to configure in various manufacturing industries, so that different type of users will be able to use it.",
-      "h3": "the product",
-      "h3Des": "The product is an online application where users working in manufacturing companies such as managers, analysts, people on production, quality controllers, logisticians and factory directors can monitor and interact with various features that their work requires.,",
-      "h4": "process",
-      "h4Des": "First we did two days of discovery workshops where we got to know industries that the product might be sold to and then we identified different types of users that will use the application. We ended up over then types of users and created user flows for them.",
-      "des1": "Chosen user flows",
-      "des2": "Navigation",
-      "desDes": "After creating user flows we identified common part of application, its navigation and we sketched out few propositions.",
-      "desDes1": "We wireframes first ideas in order to fin out what information should each screen contain.",
-      "desDes2": "Each iteration is a little bit more detailed as we go.",
-      "h5": "Final product",
-      "h5Des": "We designed a lot od screens for different type of users, below you can see some of them. In order for the application to work and look cohesive we created extended web guide that has all the elements and patterns that can be reusable when creating more features and user interface elements.",
-      "sh2": "The project was developed when i was working for Blue Paprica. I have been responsible for information architecture, prototyping, UX and UI."
-    },
     "posterChallenge": {
       "h1": "SUMMER CHALLENGE | POSTERS",
       "h1Des": "Summer poster challenge was creative counting down until the summer comes. I designed one summer poster each day for a week until 21st of June."
@@ -244,7 +241,22 @@
       "h1Des": "“You can be a book author as well” is an English title for a book cover that was created for one of the primary schools in Poland, where kids send their stories about specific topics and the best once were published in a book.\n\n"
     }
   },
+  "sorting": {
+    "sort": "sort >",
+    "concept": "concept development",
+    "game": "games",
+    "webDesign": "web design",
+    "logo": "logo",
+    "print": "print",
+    "identity": "visual identity",
+    "all": "all",
+    "uiux": "UI / UX"
+  },
   "about": {
-    "pataInfo": "Patrycja, 25 years old, graphic designer and UI / UX designer. A graduate from KEA Copenhagen School of Design and Technology), in two majors, Multimedia Design and Communication (AP) and Digital Concept Development (BA). After four years in the capital of Scandinavia, I currently live in Cracow. I mainly design digital solutions but I also have experience with offline materials. I design graphics, websites, mobile applications, interfaces, games, animations and create digital concepts. I believe in karma, I am a movie freak, music lover and weightlifting passionate."
-  }
+    "h1": "Hello!",
+    "h1Des": "I am Patrycja, UX/UI designer and digital concept developer, passionate about creating meaningful digital experiences. After four years in the capital of Scandinavia I currently live in Cracow. I have a background in digital concept development, multimedia design and communication from KEA Copenhagen School of Design and Technology. In my portfolio you can also see some offline work, it is due to my old time love for print materials.",
+    "h1Des1": "During last few years I was working on products from various industries including manufacturing, education, insurance, transportation and media. I design informational architecture, user experience and user interface. I co-hosted various UX workshops in different stages of product design, from concept creation to alterations in already working systems. I love seeing how products are both well functioning and well designed, I believe this is due to well done problem solving, involving end users and other team members into the process.  From phases of product development I mostly enjoy system mapping and seeing how products come together. Personally, I believe in karma, I am a movie freak, music lover and weightlifting passionate.",
+    "h1Des2": "Personally I believe in karma, I am a movie freak, music lover and weightlifting passionate."
+  },
+  "secretFooter": "The project was developed when i was working for Blue Paprica. I have been responsible for UX and UI.\n\n"
 }

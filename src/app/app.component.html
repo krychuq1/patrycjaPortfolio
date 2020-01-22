@@ -1,25 +1,27 @@
 <div class="bg" *ngIf="router.url === '/stp'">
   <div class="bg-inner"></div>
 </div>
+<app-password (secretEmitter)="receiveSecret($event)" *ngIf="showPassword && router.url === '/'"></app-password>
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="app" *ngIf="!imgLoading && ! contentLoading">
+<div class="app" *ngIf="!imgLoading" [class.secret]="showPassword">
   <div class="app-inner">
     <app-header></app-header>
-    <app-projects [content]="projectsContent" *ngIf="router.url === '/' || router.url.indexOf('?') > -1"></app-projects>
+    <app-projects (secretEmitter)="receiveSecret($event)" [content]="projectsContent"
+                  *ngIf="router.url === '/' || router.url.indexOf('?') > -1"></app-projects>
     <router-outlet></router-outlet>
   </div>
-  <div class="sk-three-bounce" *ngIf="imgLoading || contentLoading">
-    <div>
-      <div class="sk-child sk-bounce1"></div>
-      <div class="sk-child sk-bounce2"></div>
-      <div class="sk-child sk-bounce3"></div>
-    </div>
 
-    <p>loading</p>
-  </div>
 
 </div>
+<div class="sk-three-bounce" *ngIf="imgLoading">
+  <div>
+    <div class="sk-child sk-bounce1"></div>
+    <div class="sk-child sk-bounce2"></div>
+    <div class="sk-child sk-bounce3"></div>
+  </div>
 
+  <p>loading</p>
+</div>
 <!--pre load-->
 <img src="../../../assets/projects/&learning.jpg"
      (load)="imgLoaded()"

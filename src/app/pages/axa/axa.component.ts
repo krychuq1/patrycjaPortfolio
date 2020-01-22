@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SecretProjectsService} from '../../services/secret-projects.service';
 
 @Component({
   selector: 'app-axa',
@@ -9,10 +10,22 @@ export class AxaComponent implements OnInit {
   numberOfImage = 0;
   loading = true;
   animate = false;
-
-  constructor() { }
+  content: any;
+  images: string[];
+  routers: string[];
+  serverLoading = true;
+  constructor(private secretProjectsService: SecretProjectsService) { }
 
   ngOnInit() {
+    this.secretProjectsService.getContent('2').then(res => {
+      this.content = res.content;
+      this.images = res.images;
+      this.serverLoading = false;
+      // this.routers = res.routers;
+    }, error => {
+      // todo handle this
+      console.log(error);
+    });
   }
   imgLoaded() {
     this.numberOfImage ++;

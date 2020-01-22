@@ -1,81 +1,111 @@
 @import "../../../styles";
 
-
 .about{
-  img{
-    max-width: calc(100% + 50px);
-    margin-left: -25px;
-    position: relative;
-    z-index: 1;
-    margin-top: 20px;
-    opacity: 0;
-    &.show{
-      opacity: 1;
-      transition: $animate;
-    }
+  margin-top: 0;
+  p{
+    font-size: 14px;
+    margin-bottom: 20px;
   }
-  .about-text{
-    text-align: left;
-    margin-top: -35px;
+  .white-box{
+    //border: 1px solid red;
+    margin: -48px 15px 0 15px;
+    padding: 12px 15px 0 15px;
+
+    z-index: 9999999;
+    position: relative;
     background: white;
-    position: relative;
-    z-index: 2;
-    padding: 15px 20px;
-    opacity: 0;
-    &.show{
-      opacity: 1;
-      transition: $animate;
-    }
-    span{
-      line-height: 2rem;
-    }
-  }
-  .languages{
-    display: none;
-    p{
-      &.selected{
-        font-weight: 500;
-      }
-    }
   }
 }
 @include breakpoint(desktop) {
   .about{
-    margin-left: 260px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    img{
-      max-width: 60%;
-      margin-left: 0;
-      margin-top: 40px;
+    margin-top: -75px;
+    .white-box{
+      margin: -88px 100px 0 60px;
+      padding: 12px 3px 0 10px;
     }
-    .about-text{
-      margin-left: -200px;
-      max-width: 312px;
-      margin-top: 30px;
-    }
-
-    .languages{
-      position: absolute;
-      display: flex;
-      cursor: pointer;
-      //border: 1px solid red;
-      align-items: center;
-      width: 43px;
-      justify-content: space-between;
-      //margin-right: 20px;
-      font-size: 0.9rem;
-      right: 0;
-      top: 0;
-      p{
-        &:hover{
-          font-weight: 500;
-        }
+    p{
+      &.footer{
+        margin: 44px 0 31px 40px;
       }
-
-
     }
   }
-
 }
+
+//.about{
+//  img{
+//    max-width: calc(100% + 50px);
+//    margin-left: -25px;
+//    position: relative;
+//    z-index: 1;
+//    margin-top: 20px;
+//    opacity: 0;
+//    &.show{
+//      opacity: 1;
+//      transition: $animate;
+//    }
+//  }
+//  .about-text{
+//    text-align: left;
+//    margin-top: -35px;
+//    background: white;
+//    position: relative;
+//    z-index: 2;
+//    padding: 15px 20px;
+//    opacity: 0;
+//    &.show{
+//      opacity: 1;
+//      transition: $animate;
+//    }
+//    span{
+//      line-height: 2rem;
+//    }
+//  }
+//  .languages{
+//    display: none;
+//    p{
+//      &.selected{
+//        font-weight: 500;
+//      }
+//    }
+//  }
+//}
+//@include breakpoint(desktop) {
+//  .about{
+//    margin-left: 260px;
+//    position: relative;
+//    display: flex;
+//    align-items: center;
+//    img{
+//      max-width: 60%;
+//      margin-left: 0;
+//      margin-top: 40px;
+//    }
+//    .about-text{
+//      margin-left: -200px;
+//      max-width: 312px;
+//      margin-top: 30px;
+//    }
+//
+//    .languages{
+//      position: absolute;
+//      display: flex;
+//      cursor: pointer;
+//      //border: 1px solid red;
+//      align-items: center;
+//      width: 43px;
+//      justify-content: space-between;
+//      //margin-right: 20px;
+//      font-size: 0.9rem;
+//      right: 0;
+//      top: 0;
+//      p{
+//        &:hover{
+//          font-weight: 500;
+//        }
+//      }
+//
+//
+//    }
+//  }
+
+//}

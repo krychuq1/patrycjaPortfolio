@@ -1,47 +1,47 @@
 <div class="project-page andea" *ngIf="!loading" [ngClass]="animate ? 'show' : ''">
   <div class="line"></div>
-  <img src="assets/projects/andea/logo.png" class="logo">
-  <h3>{{'projects.andea.h1' | translate}}</h3>
-  <p class="before-header">{{'projects.andea.h1Des' | translate}}</p>
-  <h3>{{'projects.andea.h2' | translate}}</h3>
-  <h5 class="h5-before-header h5-after-header">{{'projects.andea.sh1' | translate}}</h5>
-  <h3>{{'projects.andea.h3' | translate}}</h3>
-  <p class="before-header">{{'projects.andea.h3Des' | translate}}</p>
-  <h3>{{'projects.andea.h4' | translate}}</h3>
-  <p>{{'projects.andea.h4Des' | translate}}</p>
-  <h5 class="h5-really-before-image"> {{'projects.andea.des1' | translate}} </h5>
-  <img src="assets/projects/andea/pic1.jpg" class="p-image p1">
-  <img src="assets/projects/andea/pic2.jpg" class="p-image p1 no-top">
-  <h5 class="h5-before-image"> {{'projects.andea.des2' | translate}} </h5>
-  <p>{{'projects.andea.desDes' | translate}}</p>
-  <img src="assets/projects/andea/pic3.png" class="p-image p1 shadow">
-  <img src="assets/projects/andea/pic4.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic5.png" class="p-image p1 shadow no-top">
-  <p>{{'projects.andea.desDes1' | translate}}</p>
-  <img src="assets/projects/andea/pic6.png" class="p-image p1 shadow">
-  <img src="assets/projects/andea/pic7.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic8.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic9.png" class="p-image p1 shadow no-top">
-  <p>{{'projects.andea.desDes2' | translate}}</p>
-  <img src="assets/projects/andea/pic10.png" class="p-image p1 shadow">
-  <img src="assets/projects/andea/pic11.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic12.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic13.png" class="p-image p1 shadow no-top">
-  <h3>{{'projects.andea.h5' | translate}}</h3>
-  <p>{{'projects.andea.h5Des' | translate}}</p>
-  <img src="assets/projects/andea/pic14.png" class="p-image p1 shadow">
-  <img src="assets/projects/andea/pic15.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic16.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic17.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic18.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic19.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic20.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic21.png" class="p-image p1 shadow no-top">
-  <img src="assets/projects/andea/pic22.png" class="p-image p1 shadow no-top">
+  <img src="{{images[0]}}" class="logo">
+  <h3>{{content.h1}}</h3>
+  <p class="before-header">{{content.h1Des}}</p>
+  <h3>{{content.h2}}</h3>
+  <h5 class="h5-before-header h5-after-header">{{content.sh1}}</h5>
+  <h3>{{content.h3}}</h3>
+  <p class="before-header">{{content.h3Des}}</p>
+  <h3>{{content.h4}}</h3>
+  <p>{{content.h4Des}}</p>
+  <h5 class="h5-really-before-image"> {{content.des1}} </h5>
+  <img src="{{images[1]}}" class="p-image p1">
+  <img src="{{images[2]}}" class="p-image p1 no-top">
+  <h5 class="h5-before-image"> {{content.des2}} </h5>
+  <p>{{content.desDes}}</p>
+  <img src="{{images[3]}}" class="p-image p1 shadow">
+  <img src="{{images[4]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[5]}}" class="p-image p1 shadow no-top">
+  <p>{{content.desDes1}}</p>
+  <img src="{{images[6]}}" class="p-image p1 shadow">
+  <img src="{{images[7]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[8]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[9]}}" class="p-image p1 shadow no-top">
+  <p>{{content.desDes2}}</p>
+  <img src="{{images[10]}}" class="p-image p1 shadow">
+  <img src="{{images[11]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[12]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[13]}}" class="p-image p1 shadow no-top">
+  <h3>{{content.h5}}</h3>
+  <p>{{content.h5Des}}</p>
+  <img src="{{images[14]}}" class="p-image p1 shadow">
+  <img src="{{images[15]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[16]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[17]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[18]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[19]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[20]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[21]}}" class="p-image p1 shadow no-top">
+  <img src="{{images[22]}}" class="p-image p1 shadow no-top">
   <div class="arrow-holder">
     <img src="assets/projects/arrow.png" alt="arrow" class="arrow" (click)="scrollToTop()" >
   </div>
-  <p class="no-header">{{'projects.andea.sh2' | translate}}</p>
+  <p class="no-header">{{content.sh2}}</p>
   <p class="footer">{{'projects.gajol.footer' | translate}}</p>
 </div>
 <div class="project-page-loader sk-three-bounce subPage" *ngIf="loading">
@@ -52,19 +52,22 @@
   </div>
   <p>loading</p>
 </div>
-<img src="assets/projects/andea/logo.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic1.jpg" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic2.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic3.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic4.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic5.png" class="p-image p1" (load)="imgLoaded()" style="display: none ">
-<img src="assets/projects/andea/pic6.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic7.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic8.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic9.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic10.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic11.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic12.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic13.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic14.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
-<img src="assets/projects/andea/pic15.png" class="p-image p1" (load)="imgLoaded()" style="display: none">
+
+<div *ngIf="!serverLoading">
+  <img src="{{images[0]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[1]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[2]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[3]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[4]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[5]}}" class="p-image p1" (load)="imgLoaded()" style="display: none ">
+  <img src="{{images[6]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[7]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[8]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[9]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[10]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[11]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[12]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[13]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[14]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[15]}}" class="p-image p1" (load)="imgLoaded()" style="display: none">
+</div>

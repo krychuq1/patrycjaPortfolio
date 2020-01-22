@@ -1,0 +1,31 @@
+<div class="project-page hoper show" *ngIf="!loading" [ngClass]="animate ? 'show' : ''">
+  <div class="line"></div>
+  <img src="{{images[0]}}" class="logo">
+  <h3>{{content.h1}}</h3>
+  <p>{{content.h1Des}}</p>
+  <img src="{{images[1]}}" class="p-image p1 shadow">
+  <img src="{{images[2]}}" class="p-image p1 no-top shadow">
+  <img src="{{images[3]}}" class="p-image p1 no-top shadow">
+  <img src="{{images[4]}}" class="p-image p1 no-top shadow">
+  <img src="{{images[5]}}" class="p-image p1 no-top shadow">
+
+  <p class="no-header">{{'secretFooter' | translate}}</p>
+  <p class="footer">{{'projects.gajol.footer' | translate}}</p>
+</div>
+<div class="project-page-loader sk-three-bounce subPage" *ngIf="loading">
+  <div>
+    <div class="sk-child sk-bounce1"></div>
+    <div class="sk-child sk-bounce2"></div>
+    <div class="sk-child sk-bounce3"></div>
+  </div>
+  <p>loading</p>
+</div>
+
+<div *ngIf="!serverLoading">
+  <img src="{{images[1]}}" class="p-image p1 " (load)="imgLoaded()" style="display: none">
+  <img src="{{images[2]}}" class="p-image p1 no-top" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[3]}}" class="p-image p1 no-top" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[4]}}" class="p-image p1 no-top" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[5]}}" class="p-image p1 no-top" (load)="imgLoaded()" style="display: none">
+  <img src="{{images[0]}}" class="logo" (load)="imgLoaded()" style="display: none">
+</div>

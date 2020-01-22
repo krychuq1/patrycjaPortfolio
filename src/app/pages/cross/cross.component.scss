@@ -1,0 +1,11 @@
+@import "../../../styles";
+
+
+
+@include breakpoint(desktop) {
+  .cross{
+    .logo{
+      margin-left: 42px;
+    }
+  }
+}

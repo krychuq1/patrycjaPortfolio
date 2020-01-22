@@ -1,16 +1,32 @@
-<div class="contact">
-  <div class="languages">
-    <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>
-    <span class="line">|</span>
-    <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>
-  </div>
+<div class="project-page show contact">
+  <div class="line"></div>
+  <h3>{{'contact.h1' | translate}}</h3>
+  <p>{{'contact.h1Des' | translate}}</p>
+  <div class="contact-footer">
+    <div>
+      <img src="assets/contact/phone.svg">
+      <p>{{'contact.phone' | translate}}</p>
+    </div>
+    <div>
+      <img src="assets/contact/sms.svg">
+      <p>{{'contact.mail' | translate}}</p>
 
-  <div class="contact-info" [ngClass]="animate ? 'show' : ''">
-    <p>{{content['contactInfo']}}</p>
-    <div class="details">
-      <p class="bold">{{content['contactPhone']}}</p>
-      <p class="bold">{{content['contactEmail']}}</p>
     </div>
 
   </div>
+
+  <!--  <div class="languages">-->
+<!--    <p (click)="setLanguage('en')" class="en" [ngClass]="this.local.getItem('lan') === 'en' ? 'selected' : ''">en</p>-->
+<!--    <span class="line">|</span>-->
+<!--    <p (click)="setLanguage('pl')" class="pl"[ngClass]="this.local.getItem('lan') === 'pl' ? 'selected' : ''" >pl</p>-->
+<!--  </div>-->
+
+<!--  <div class="contact-info" [ngClass]="animate ? 'show' : ''">-->
+<!--    <p>{{content['contactInfo']}}</p>-->
+<!--    <div class="details">-->
+<!--      <p class="bold">{{content['contactPhone']}}</p>-->
+<!--      <p class="bold">{{content['contactEmail']}}</p>-->
+<!--    </div>-->
+
+<!--  </div>-->
 </div>

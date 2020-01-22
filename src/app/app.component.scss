@@ -1,7 +1,12 @@
 @import "../styles";
 
+
 .app{
-  //text-align: center;
+  &.secret{
+    max-height: calc(100vh - 26px);
+    overflow: hidden;
+    top: -25px;
+  }
 }
 @include breakpoint(desktop) {
   .bg{
@@ -22,6 +27,11 @@
     width: 255px;
   }
   .app{
+    &.secret{
+      max-height: calc(100vh - 26px);
+      overflow: hidden;
+      top: -25px;
+    }
     .app-inner{
       margin: 0 auto;
       width: 1024px;
