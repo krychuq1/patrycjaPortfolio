@@ -3,6 +3,12 @@
   .logo{
     width: 160px;
   }
+  .bold{
+    a{
+      color: black;
+      text-decoration: none;
+    }
+  }
 }
 @include breakpoint(desktop) {
   .imaread{
